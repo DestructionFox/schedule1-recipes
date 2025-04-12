@@ -1,0 +1,26 @@
+{
+  "ingredients": {
+    "Addy": "Images/Addy_Icon.webp",
+    "Banana": "Images/Banana_Icon.webp",
+    "Battery": "Images/Battery_Icon.webp",
+    "Chili": "Images/Chili_Icon.webp",
+    "Cuke": "Images/Cuke_Icon.webp",
+    "Donut": "Images/Donut_Icon.webp",
+    "Energy Drink": "Images/Energy_Drink_Icon.webp",
+    "Flu Medicine": "Images/Flu_Medicine_Icon.webp",
+    "Gasoline": "Images/Gasoline_Icon.webp",
+    "Horse Semen": "Images/Horse_Semen_Icon.webp",
+    "Iodine": "Images/Iodine_Icon.webp",
+    "Mega Bean": "Images/Mega_Bean_Icon.webp",
+    "Motor Oil": "Images/Motor_Oil_Icon.webp",
+    "Mouth Wash": "Images/Mouth_Wash_Icon.webp",
+    "Paracetamol": "Images/Paracetamol_Icon.webp",
+    "Viagra": "Images/Viagra_Icon.webp"
+  },
+  "weed-strains": {
+    "OG Kush": "Images/OGKush_Icon.webp",
+    "Sour Diesel": "Images/SourDiesel_Icon.webp",
+    "Green Crack": "Images/GreenCrack_Icon.webp",
+    "Granddaddy Purple": "Images/GranddaddyPurple_Icon.webp"
+  }
+}
