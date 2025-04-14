@@ -31,15 +31,17 @@ async function loadRegionalTop() {
 async function loadStrainRecipes() {
   const response = await fetch('data/schedule1_all_recipes_named.json');
   const recipes = await response.json();
-  const strains = ["OG Kush", "Sour Diesel", "Green Crack", "Granddaddy Purple"];
-  const ids = ["OGKush", "SourDiesel", "GreenCrack", "GranddaddyPurple"];
 
-  for (let i = 0; i < strains.length; i++) {
-    const strain = strains[i];
-    const id = ids[i];
+  const strainMap = {
+    "OG Kush": "OGKush",
+    "Sour Diesel": "SourDiesel",
+    "Green Crack": "GreenCrack",
+    "Granddaddy Purple": "GranddaddyPurple"
+  };
+
+  Object.entries(strainMap).forEach(([strainName, id]) => {
     const container = document.getElementById(id + "_Recipes");
-
-    const strainRecipes = recipes.filter(r => r["Base Strain"] === strain);
+    const strainRecipes = recipes.filter(r => r["Base Strain"] === strainName);
     strainRecipes.forEach(recipe => {
       const card = document.createElement('div');
       card.className = 'recipeCard';
@@ -52,7 +54,7 @@ async function loadStrainRecipes() {
       `;
       container.appendChild(card);
     });
-  }
+  });
 }
 
 window.onload = () => {
