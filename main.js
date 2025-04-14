@@ -36,7 +36,7 @@ async function loadStrainRecipes() {
     "OG Kush": "OGKush",
     "Sour Diesel": "SourDiesel",
     "Green Crack": "GreenCrack",
-    "Granddaddy Purple": "GranddaddyPurple"
+    "Grandaddy Purple": "GrandaddyPurple"
   };
 
   Object.entries(strainMap).forEach(([strainName, id]) => {
