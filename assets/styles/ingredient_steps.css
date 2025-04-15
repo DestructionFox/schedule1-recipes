@@ -1,0 +1,19 @@
+.ingredient-step {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+  width: 100px;
+}
+
+.ingredient-step img {
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+}
+
+.ingredient-step span {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.9em;
+}
