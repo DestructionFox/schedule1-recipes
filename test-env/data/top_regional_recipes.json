@@ -1,0 +1,240 @@
+{
+  "Downtown": [
+    {
+      "Base Strain": "OG Kush",
+      "Sell Price": "$164",
+      "Ingredients": [
+        "Paracetamol",
+        "Cuke",
+        "Paracetamol",
+        "Gasoline",
+        "Cuke",
+        "Mega Bean",
+        "Battery"
+      ],
+      "Effects": [
+        "Anti-Gravity",
+        "Glowing",
+        "Balding",
+        "Tropic Thunder",
+        "Zombifying",
+        "Cyclopean",
+        "Foggy",
+        "Bright-Eyed"
+      ],
+      "Name": "FoggyTropic Blast"
+    },
+    {
+      "Base Strain": "OG Kush",
+      "Sell Price": "$172",
+      "Ingredients": [
+        "Horse Semen",
+        "Paracetamol",
+        "Gasoline",
+        "Cuke",
+        "Mega Bean",
+        "Paracetamol",
+        "Mega Bean",
+        "Battery"
+      ],
+      "Effects": [
+        "Anti-Gravity",
+        "Long Faced",
+        "Tropic Thunder",
+        "Zombifying",
+        "Cyclopean",
+        "Glowing",
+        "Foggy",
+        "Bright-Eyed"
+      ],
+      "Name": "FoggyTropic Trip"
+    },
+    {
+      "Base Strain": "OG Kush",
+      "Sell Price": "$171",
+      "Ingredients": [
+        "Banana",
+        "Gasoline",
+        "Paracetamol",
+        "Cuke",
+        "Mega Bean",
+        "Battery",
+        "Banana",
+        "Cuke"
+      ],
+      "Effects": [
+        "Tropic Thunder",
+        "Anti-Gravity",
+        "Zombifying",
+        "Jennerising",
+        "Glowing",
+        "Cyclopean",
+        "Bright-Eyed",
+        "Thought-Provoking"
+      ],
+      "Name": "GlowingBright-eyed Buzz"
+    },
+    {
+      "Base Strain": "Sour Diesel",
+      "Sell Price": "$144",
+      "Ingredients": [
+        "Iodine",
+        "Paracetamol",
+        "Chili",
+        "Viagra",
+        "Paracetamol",
+        "Cuke",
+        "Motor Oil"
+      ],
+      "Effects": [
+        "Thought-Provoking",
+        "Jennerising",
+        "Bright-Eyed",
+        "Spicy",
+        "Tropic Thunder",
+        "Anti-Gravity",
+        "Munchies",
+        "Slippery"
+      ],
+      "Name": "Bright-eyedMunchies Storm"
+    },
+    {
+      "Base Strain": "Grandaddy Purple",
+      "Sell Price": "$163",
+      "Ingredients": [
+        "Energy Drink",
+        "Cuke",
+        "Paracetamol",
+        "Gasoline",
+        "Cuke",
+        "Mega Bean",
+        "Battery"
+      ],
+      "Effects": [
+        "Anti-Gravity",
+        "Calorie-Dense",
+        "Glowing",
+        "Tropic Thunder",
+        "Zombifying",
+        "Cyclopean",
+        "Foggy",
+        "Bright-Eyed"
+      ],
+      "Name": "FoggyCalorie-dense Surge"
+    }
+  ],
+  "Westville": [
+    {
+      "Base Strain": "Green Crack",
+      "Sell Price": "$148",
+      "Ingredients": [
+        "Gasoline",
+        "Paracetamol",
+        "Cuke",
+        "Banana",
+        "Gasoline",
+        "Cuke",
+        "Viagra",
+        "Banana"
+      ],
+      "Effects": [
+        "Cyclopean",
+        "Tropic Thunder",
+        "Jennerising",
+        "Thought-Provoking",
+        "Anti-Gravity",
+        "Bright-Eyed",
+        "Energizing",
+        "Gingeritis"
+      ],
+      "Name": "EnergizingJennerising Spike"
+    },
+    {
+      "Base Strain": "Green Crack",
+      "Sell Price": "$106",
+      "Ingredients": [
+        "Paracetamol",
+        "Cuke",
+        "Banana",
+        "Viagra",
+        "Donut"
+      ],
+      "Effects": [
+        "Jennerising",
+        "Sneaky",
+        "Thought-Provoking",
+        "Gingeritis",
+        "Tropic Thunder",
+        "Calorie-Dense"
+      ],
+      "Name": "JennerisingGingeritis Crash"
+    },
+    {
+      "Base Strain": "Green Crack",
+      "Sell Price": "$116",
+      "Ingredients": [
+        "Addy",
+        "Battery",
+        "Chili",
+        "Iodine",
+        "Viagra"
+      ],
+      "Effects": [
+        "Energizing",
+        "Thought-Provoking",
+        "Bright-Eyed",
+        "Spicy",
+        "Jennerising",
+        "Tropic Thunder"
+      ],
+      "Name": "JennerisingBright-eyed Spike"
+    },
+    {
+      "Base Strain": "Green Crack",
+      "Sell Price": "$120",
+      "Ingredients": [
+        "Donut",
+        "Flu Medicine",
+        "Viagra",
+        "Battery",
+        "Addy",
+        "Iodine"
+      ],
+      "Effects": [
+        "Energizing",
+        "Calorie-Dense",
+        "Gingeritis",
+        "Tropic Thunder",
+        "Bright-Eyed",
+        "Thought-Provoking",
+        "Jennerising"
+      ],
+      "Name": "TropicEnergizing Dream"
+    },
+    {
+      "Base Strain": "Green Crack",
+      "Sell Price": "$171",
+      "Ingredients": [
+        "Paracetamol",
+        "Banana",
+        "Gasoline",
+        "Cuke",
+        "Mega Bean",
+        "Battery",
+        "Banana",
+        "Cuke"
+      ],
+      "Effects": [
+        "Jennerising",
+        "Tropic Thunder",
+        "Anti-Gravity",
+        "Zombifying",
+        "Glowing",
+        "Cyclopean",
+        "Bright-Eyed",
+        "Thought-Provoking"
+      ],
+      "Name": "Anti-gravityZombifying Drift"
+    }
+  ]
+}

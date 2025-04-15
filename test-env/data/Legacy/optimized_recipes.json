@@ -1,0 +1,571 @@
+{
+  "ingredient_catalog": {
+    "Donut": {
+      "price": 3,
+      "base_effect": "Calorie-Dense",
+      "unlock_level": "Street rat I"
+    },
+    "Mouth Wash": {
+      "price": 4,
+      "base_effect": "Balding",
+      "unlock_level": "Hoodlum III"
+    },
+    "Cuke": {
+      "price": 2,
+      "base_effect": "Energizing",
+      "unlock_level": "Street rat I"
+    },
+    "Banana": {
+      "price": 2,
+      "base_effect": "Gingeritis",
+      "unlock_level": "Street rat I"
+    },
+    "Viagra": {
+      "price": 4,
+      "base_effect": "Tropic Thunder",
+      "unlock_level": "Hoodlum II"
+    },
+    "Flu Medicine": {
+      "price": 5,
+      "base_effect": "Sedating",
+      "unlock_level": "Hoodlum IV"
+    },
+    "Paracetamol": {
+      "price": 3,
+      "base_effect": "Sneaky",
+      "unlock_level": "Street rat I"
+    },
+    "Gasoline": {
+      "price": 5,
+      "base_effect": "Toxic",
+      "unlock_level": "Hoodlum V"
+    },
+    "Mega Bean": {
+      "price": 7,
+      "base_effect": "Foggy",
+      "unlock_level": "Peddler III"
+    },
+    "Battery": {
+      "price": 8,
+      "base_effect": "Bright-Eyed",
+      "unlock_level": "Peddler V"
+    },
+    "Chili": {
+      "price": 7,
+      "base_effect": "Spicy",
+      "unlock_level": "Peddler IV"
+    },
+    "Horse Semen": {
+      "price": 9,
+      "base_effect": "Long Faced",
+      "unlock_level": "Hustler III"
+    },
+    "Energy Drink": {
+      "price": 6,
+      "base_effect": "Athletic",
+      "unlock_level": "Peddler I"
+    },
+    "Motor Oil": {
+      "price": 6,
+      "base_effect": "Slippery",
+      "unlock_level": "Peddler II"
+    },
+    "Iodine": {
+      "price": 8,
+      "base_effect": "Jennerising",
+      "unlock_level": "Hustler I"
+    },
+    "Addy": {
+      "price": 9,
+      "base_effect": "Thought-Provoking",
+      "unlock_level": "Hustler II"
+    }
+  },
+  "strains": {
+    "OG Kush": [
+      {
+        "price": 127,
+        "ingredients": [
+          "Donut",
+          "Mouth Wash",
+          "Cuke",
+          "Banana",
+          "Viagra",
+          "Flu Medicine"
+        ],
+        "effects": [
+          "Anti-Gravity",
+          "Jennerising",
+          "Balding",
+          "Thought-Provoking",
+          "Gingeritis",
+          "Tropic Thunder",
+          "Sedating"
+        ],
+        "ingredient_cost": 20,
+        "type": "TBD"
+      },
+      {
+        "price": 118,
+        "ingredients": [
+          "Donut",
+          "Mouth Wash",
+          "Cuke",
+          "Banana",
+          "Viagra"
+        ],
+        "effects": [
+          "Anti-Gravity",
+          "Jennerising",
+          "Balding",
+          "Thought-Provoking",
+          "Gingeritis",
+          "Tropic Thunder"
+        ],
+        "ingredient_cost": 15,
+        "type": "TBD"
+      },
+      {
+        "price": 80,
+        "ingredients": [
+          "Banana",
+          "Cuke",
+          "Banana"
+        ],
+        "effects": [
+          "Jennerising",
+          "Thought-Provoking",
+          "Energizing",
+          "Gingeritis"
+        ],
+        "ingredient_cost": 6,
+        "type": "TBD"
+      },
+      {
+        "price": 103,
+        "ingredients": [
+          "Mouth Wash",
+          "Cuke",
+          "Viagra",
+          "Banana"
+        ],
+        "effects": [
+          "Anti-Gravity",
+          "Balding",
+          "Thought-Provoking",
+          "Tropic Thunder",
+          "Gingeritis"
+        ],
+        "ingredient_cost": 12,
+        "type": "TBD"
+      },
+      {
+        "price": 164,
+        "ingredients": [
+          "Paracetamol",
+          "Cuke",
+          "Paracetamol",
+          "Gasoline",
+          "Cuke",
+          "Mega Bean",
+          "Battery"
+        ],
+        "effects": [
+          "Anti-Gravity",
+          "Glowing",
+          "Balding",
+          "Tropic Thunder",
+          "Zombifying",
+          "Cyclopean",
+          "Foggy",
+          "Bright-Eyed"
+        ],
+        "ingredient_cost": 30,
+        "type": "TBD"
+      },
+      {
+        "price": 109,
+        "ingredients": [
+          "Paracetamol",
+          "Viagra",
+          "Chili",
+          "Horse Semen"
+        ],
+        "effects": [
+          "Slippery",
+          "Bright-Eyed",
+          "Tropic Thunder",
+          "Spicy",
+          "Long Faced"
+        ],
+        "ingredient_cost": 23,
+        "type": "TBD"
+      },
+      {
+        "price": 172,
+        "ingredients": [
+          "Horse Semen",
+          "Paracetamol",
+          "Gasoline",
+          "Cuke",
+          "Mega Bean",
+          "Paracetamol",
+          "Mega Bean",
+          "Battery"
+        ],
+        "effects": [
+          "Anti-Gravity",
+          "Long Faced",
+          "Tropic Thunder",
+          "Zombifying",
+          "Cyclopean",
+          "Glowing",
+          "Foggy",
+          "Bright-Eyed"
+        ],
+        "ingredient_cost": 44,
+        "type": "TBD"
+      },
+      {
+        "price": 136,
+        "ingredients": [
+          "Paracetamol",
+          "Viagra",
+          "Donut",
+          "Banana",
+          "Cuke",
+          "Paracetamol",
+          "Banana"
+        ],
+        "effects": [
+          "Anti-Gravity",
+          "Jennerising",
+          "Tropic Thunder",
+          "Calorie-Dense",
+          "Thought-Provoking",
+          "Balding",
+          "Sneaky",
+          "Gingeritis"
+        ],
+        "ingredient_cost": 19,
+        "type": "TBD"
+      }
+    ],
+    "Sour Diesel": [
+      {
+        "price": 71,
+        "ingredients": [
+          "Cuke",
+          "Flu Medicine",
+          "Banana"
+        ],
+        "effects": [
+          "Refreshing",
+          "Thought-Provoking",
+          "Sedating",
+          "Gingeritis"
+        ],
+        "ingredient_cost": 9,
+        "type": "TBD"
+      },
+      {
+        "price": 81,
+        "ingredients": [
+          "Cuke",
+          "Flu Medicine",
+          "Mega Bean"
+        ],
+        "effects": [
+          "Refreshing",
+          "Cyclopean",
+          "Sedating",
+          "Foggy"
+        ],
+        "ingredient_cost": 14,
+        "type": "TBD"
+      },
+      {
+        "price": 112,
+        "ingredients": [
+          "Paracetamol",
+          "Energy Drink",
+          "Cuke",
+          "Motor Oil",
+          "Cuke",
+          "Battery",
+          "Energy Drink"
+        ],
+        "effects": [
+          "Refreshing",
+          "Anti-Gravity",
+          "Athletic",
+          "Sneaky",
+          "Slippery",
+          "Energizing",
+          "Bright-Eyed"
+        ],
+        "ingredient_cost": 33,
+        "type": "TBD"
+      },
+      {
+        "price": 144,
+        "ingredients": [
+          "Iodine",
+          "Paracetamol",
+          "Chili",
+          "Viagra",
+          "Paracetamol",
+          "Cuke",
+          "Motor Oil"
+        ],
+        "effects": [
+          "Thought-Provoking",
+          "Jennerising",
+          "Bright-Eyed",
+          "Spicy",
+          "Tropic Thunder",
+          "Anti-Gravity",
+          "Munchies",
+          "Slippery"
+        ],
+        "ingredient_cost": 33,
+        "type": "TBD"
+      },
+      {
+        "price": 102,
+        "ingredients": [
+          "Cuke",
+          "Flu Medicine",
+          "Donut",
+          "Mega Bean",
+          "Battery"
+        ],
+        "effects": [
+          "Refreshing",
+          "Glowing",
+          "Sedating",
+          "Calorie-Dense",
+          "Foggy",
+          "Bright-Eyed"
+        ],
+        "ingredient_cost": 25,
+        "type": "TBD"
+      },
+      {
+        "price": 85,
+        "ingredients": [
+          "Iodine",
+          "Horse Semen"
+        ],
+        "effects": [
+          "Electrifying",
+          "Jennerising",
+          "Long Faced"
+        ],
+        "ingredient_cost": 17,
+        "type": "TBD"
+      }
+    ],
+    "Green Crack": [
+      {
+        "price": 77,
+        "ingredients": [
+          "Viagra",
+          "Horse Semen"
+        ],
+        "effects": [
+          "Energizing",
+          "Tropic Thunder",
+          "Long Faced"
+        ],
+        "ingredient_cost": 13,
+        "type": "TBD"
+      },
+      {
+        "price": 65,
+        "ingredients": [
+          "Gasoline",
+          "Viagra"
+        ],
+        "effects": [
+          "Bright-Eyed",
+          "Toxic",
+          "Tropic Thunder"
+        ],
+        "ingredient_cost": 9,
+        "type": "TBD"
+      },
+      {
+        "price": 148,
+        "ingredients": [
+          "Gasoline",
+          "Paracetamol",
+          "Cuke",
+          "Banana",
+          "Gasoline",
+          "Cuke",
+          "Viagra",
+          "Banana"
+        ],
+        "effects": [
+          "Cyclopean",
+          "Tropic Thunder",
+          "Jennerising",
+          "Thought-Provoking",
+          "Anti-Gravity",
+          "Bright-Eyed",
+          "Energizing",
+          "Gingeritis"
+        ],
+        "ingredient_cost": 25,
+        "type": "TBD"
+      },
+      {
+        "price": 106,
+        "ingredients": [
+          "Paracetamol",
+          "Cuke",
+          "Banana",
+          "Viagra",
+          "Donut"
+        ],
+        "effects": [
+          "Jennerising",
+          "Sneaky",
+          "Thought-Provoking",
+          "Gingeritis",
+          "Tropic Thunder",
+          "Calorie-Dense"
+        ],
+        "ingredient_cost": 14,
+        "type": "TBD"
+      },
+      {
+        "price": 116,
+        "ingredients": [
+          "Addy",
+          "Battery",
+          "Chili",
+          "Iodine",
+          "Viagra"
+        ],
+        "effects": [
+          "Energizing",
+          "Thought-Provoking",
+          "Bright-Eyed",
+          "Spicy",
+          "Jennerising",
+          "Tropic Thunder"
+        ],
+        "ingredient_cost": 36,
+        "type": "TBD"
+      },
+      {
+        "price": 120,
+        "ingredients": [
+          "Donut",
+          "Flu Medicine",
+          "Viagra",
+          "Battery",
+          "Addy",
+          "Iodine"
+        ],
+        "effects": [
+          "Energizing",
+          "Calorie-Dense",
+          "Gingeritis",
+          "Tropic Thunder",
+          "Bright-Eyed",
+          "Thought-Provoking",
+          "Jennerising"
+        ],
+        "ingredient_cost": 37,
+        "type": "TBD"
+      }
+    ],
+    "Grandaddy Purple": [
+      {
+        "price": 139,
+        "ingredients": [
+          "Viagra",
+          "Paracetamol",
+          "Energy Drink",
+          "Cuke",
+          "Banana",
+          "Paracetamol",
+          "Motor Oil"
+        ],
+        "effects": [
+          "Anti-Gravity",
+          "Tropic Thunder",
+          "Jennerising",
+          "Athletic",
+          "Thought-Provoking",
+          "Gingeritis",
+          "Sneaky",
+          "Slippery"
+        ],
+        "ingredient_cost": 26,
+        "type": "TBD"
+      },
+      {
+        "price": 101,
+        "ingredients": [
+          "Addy",
+          "Battery",
+          "Mega Bean",
+          "Flu Medicine",
+          "Cuke"
+        ],
+        "effects": [
+          "Thought-Provoking",
+          "Energizing",
+          "Bright-Eyed",
+          "Cyclopean",
+          "Sedating"
+        ],
+        "ingredient_cost": 31,
+        "type": "TBD"
+      },
+      {
+        "price": 74,
+        "ingredients": [
+          "Energy Drink",
+          "Paracetamol"
+        ],
+        "effects": [
+          "Anti-Gravity",
+          "Athletic",
+          "Sneaky"
+        ],
+        "ingredient_cost": 9,
+        "type": "TBD"
+      },
+      {
+        "price": 167,
+        "ingredients": [
+          "Banana",
+          "Cuke",
+          "Paracetamol",
+          "Gasoline",
+          "Cuke",
+          "Battery",
+          "Horse Semen",
+          "Mega Bean"
+        ],
+        "effects": [
+          "Sedating",
+          "Electrifying",
+          "Glowing",
+          "Tropic Thunder",
+          "Zombifying",
+          "Cyclopean",
+          "Bright-Eyed",
+          "Long Faced"
+        ],
+        "ingredient_cost": 38,
+        "type": "TBD"
+      }
+    ]
+  }
+}

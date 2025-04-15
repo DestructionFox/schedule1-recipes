@@ -1,0 +1,661 @@
+{
+  "OGKush_127": {
+    "strain": "OG Kush",
+    "price": 127,
+    "ingredients": [
+      "Donut",
+      "Mouth Wash",
+      "Cuke",
+      "Banana",
+      "Viagra",
+      "Flu Medicine"
+    ],
+    "effects": [
+      "Anti-Gravity",
+      "Jennerising",
+      "Balding",
+      "Thought-Provoking",
+      "Gingeritis",
+      "Tropic Thunder",
+      "Sedating"
+    ],
+    "ingredient_cost": 20,
+    "type": "TBD",
+    "regions": [],
+    "regional_name": null,
+    "base_price": 35,
+    "multiplier_sum": 3.0,
+    "calculated_price": 140,
+    "profit_margin": 107
+  },
+  "OGKush_118": {
+    "strain": "OG Kush",
+    "price": 118,
+    "ingredients": [
+      "Donut",
+      "Mouth Wash",
+      "Cuke",
+      "Banana",
+      "Viagra"
+    ],
+    "effects": [
+      "Anti-Gravity",
+      "Jennerising",
+      "Balding",
+      "Thought-Provoking",
+      "Gingeritis",
+      "Tropic Thunder"
+    ],
+    "ingredient_cost": 15,
+    "type": "TBD",
+    "regions": [],
+    "regional_name": null,
+    "base_price": 35,
+    "multiplier_sum": 2.0,
+    "calculated_price": 105,
+    "profit_margin": 103
+  },
+  "OGKush_80": {
+    "strain": "OG Kush",
+    "price": 80,
+    "ingredients": [
+      "Banana",
+      "Cuke",
+      "Banana"
+    ],
+    "effects": [
+      "Jennerising",
+      "Thought-Provoking",
+      "Energizing",
+      "Gingeritis"
+    ],
+    "ingredient_cost": 6,
+    "type": "TBD",
+    "regions": [],
+    "regional_name": null,
+    "base_price": 35,
+    "multiplier_sum": 5.0,
+    "calculated_price": 210,
+    "profit_margin": 74
+  },
+  "OGKush_103": {
+    "strain": "OG Kush",
+    "price": 103,
+    "ingredients": [
+      "Mouth Wash",
+      "Cuke",
+      "Viagra",
+      "Banana"
+    ],
+    "effects": [
+      "Anti-Gravity",
+      "Balding",
+      "Thought-Provoking",
+      "Tropic Thunder",
+      "Gingeritis"
+    ],
+    "ingredient_cost": 12,
+    "type": "TBD",
+    "regions": [],
+    "regional_name": null,
+    "base_price": 35,
+    "multiplier_sum": 2.0,
+    "calculated_price": 105,
+    "profit_margin": 91
+  },
+  "OGKush_164": {
+    "strain": "OG Kush",
+    "price": 164,
+    "ingredients": [
+      "Paracetamol",
+      "Cuke",
+      "Paracetamol",
+      "Gasoline",
+      "Cuke",
+      "Mega Bean",
+      "Battery"
+    ],
+    "effects": [
+      "Anti-Gravity",
+      "Glowing",
+      "Balding",
+      "Tropic Thunder",
+      "Zombifying",
+      "Cyclopean",
+      "Foggy",
+      "Bright-Eyed"
+    ],
+    "ingredient_cost": 30,
+    "type": "TBD",
+    "regions": [
+      "Downtown"
+    ],
+    "regional_name": "FoggyTropic Blast",
+    "base_price": 35,
+    "multiplier_sum": 4.14,
+    "calculated_price": 180,
+    "profit_margin": 134
+  },
+  "OGKush_109": {
+    "strain": "OG Kush",
+    "price": 109,
+    "ingredients": [
+      "Paracetamol",
+      "Viagra",
+      "Chili",
+      "Horse Semen"
+    ],
+    "effects": [
+      "Slippery",
+      "Bright-Eyed",
+      "Tropic Thunder",
+      "Spicy",
+      "Long Faced"
+    ],
+    "ingredient_cost": 23,
+    "type": "TBD",
+    "regions": [],
+    "regional_name": null,
+    "base_price": 35,
+    "multiplier_sum": 3.0,
+    "calculated_price": 140,
+    "profit_margin": 86
+  },
+  "OGKush_172": {
+    "strain": "OG Kush",
+    "price": 172,
+    "ingredients": [
+      "Horse Semen",
+      "Paracetamol",
+      "Gasoline",
+      "Cuke",
+      "Mega Bean",
+      "Paracetamol",
+      "Mega Bean",
+      "Battery"
+    ],
+    "effects": [
+      "Anti-Gravity",
+      "Long Faced",
+      "Tropic Thunder",
+      "Zombifying",
+      "Cyclopean",
+      "Glowing",
+      "Foggy",
+      "Bright-Eyed"
+    ],
+    "ingredient_cost": 44,
+    "type": "TBD",
+    "regions": [
+      "Downtown"
+    ],
+    "regional_name": "FoggyTropic Trip",
+    "base_price": 35,
+    "multiplier_sum": 4.14,
+    "calculated_price": 180,
+    "profit_margin": 128
+  },
+  "OGKush_136": {
+    "strain": "OG Kush",
+    "price": 136,
+    "ingredients": [
+      "Paracetamol",
+      "Viagra",
+      "Donut",
+      "Banana",
+      "Cuke",
+      "Paracetamol",
+      "Banana"
+    ],
+    "effects": [
+      "Anti-Gravity",
+      "Jennerising",
+      "Tropic Thunder",
+      "Calorie-Dense",
+      "Thought-Provoking",
+      "Balding",
+      "Sneaky",
+      "Gingeritis"
+    ],
+    "ingredient_cost": 19,
+    "type": "TBD",
+    "regions": [],
+    "regional_name": null,
+    "base_price": 35,
+    "multiplier_sum": 6.0,
+    "calculated_price": 245,
+    "profit_margin": 117
+  },
+  "SourDiesel_71": {
+    "strain": "Sour Diesel",
+    "price": 71,
+    "ingredients": [
+      "Cuke",
+      "Flu Medicine",
+      "Banana"
+    ],
+    "effects": [
+      "Refreshing",
+      "Thought-Provoking",
+      "Sedating",
+      "Gingeritis"
+    ],
+    "ingredient_cost": 9,
+    "type": "TBD",
+    "regions": [],
+    "regional_name": null,
+    "base_price": 35,
+    "multiplier_sum": 6.0,
+    "calculated_price": 245,
+    "profit_margin": 62
+  },
+  "SourDiesel_81": {
+    "strain": "Sour Diesel",
+    "price": 81,
+    "ingredients": [
+      "Cuke",
+      "Flu Medicine",
+      "Mega Bean"
+    ],
+    "effects": [
+      "Refreshing",
+      "Cyclopean",
+      "Sedating",
+      "Foggy"
+    ],
+    "ingredient_cost": 14,
+    "type": "TBD",
+    "regions": [],
+    "regional_name": null,
+    "base_price": 35,
+    "multiplier_sum": 5.56,
+    "calculated_price": 230,
+    "profit_margin": 67
+  },
+  "SourDiesel_112": {
+    "strain": "Sour Diesel",
+    "price": 112,
+    "ingredients": [
+      "Paracetamol",
+      "Energy Drink",
+      "Cuke",
+      "Motor Oil",
+      "Cuke",
+      "Battery",
+      "Energy Drink"
+    ],
+    "effects": [
+      "Refreshing",
+      "Anti-Gravity",
+      "Athletic",
+      "Sneaky",
+      "Slippery",
+      "Energizing",
+      "Bright-Eyed"
+    ],
+    "ingredient_cost": 33,
+    "type": "TBD",
+    "regions": [],
+    "regional_name": null,
+    "base_price": 35,
+    "multiplier_sum": 15.0,
+    "calculated_price": 560,
+    "profit_margin": 79
+  },
+  "SourDiesel_144": {
+    "strain": "Sour Diesel",
+    "price": 144,
+    "ingredients": [
+      "Iodine",
+      "Paracetamol",
+      "Chili",
+      "Viagra",
+      "Paracetamol",
+      "Cuke",
+      "Motor Oil"
+    ],
+    "effects": [
+      "Thought-Provoking",
+      "Jennerising",
+      "Bright-Eyed",
+      "Spicy",
+      "Tropic Thunder",
+      "Anti-Gravity",
+      "Munchies",
+      "Slippery"
+    ],
+    "ingredient_cost": 33,
+    "type": "TBD",
+    "regions": [
+      "Downtown"
+    ],
+    "regional_name": "Bright-eyedMunchies Storm",
+    "base_price": 35,
+    "multiplier_sum": 7.0,
+    "calculated_price": 280,
+    "profit_margin": 111
+  },
+  "SourDiesel_102": {
+    "strain": "Sour Diesel",
+    "price": 102,
+    "ingredients": [
+      "Cuke",
+      "Flu Medicine",
+      "Donut",
+      "Mega Bean",
+      "Battery"
+    ],
+    "effects": [
+      "Refreshing",
+      "Glowing",
+      "Sedating",
+      "Calorie-Dense",
+      "Foggy",
+      "Bright-Eyed"
+    ],
+    "ingredient_cost": 25,
+    "type": "TBD",
+    "regions": [],
+    "regional_name": null,
+    "base_price": 35,
+    "multiplier_sum": 8.0,
+    "calculated_price": 315,
+    "profit_margin": 77
+  },
+  "SourDiesel_85": {
+    "strain": "Sour Diesel",
+    "price": 85,
+    "ingredients": [
+      "Iodine",
+      "Horse Semen"
+    ],
+    "effects": [
+      "Electrifying",
+      "Jennerising",
+      "Long Faced"
+    ],
+    "ingredient_cost": 17,
+    "type": "TBD",
+    "regions": [],
+    "regional_name": null,
+    "base_price": 35,
+    "multiplier_sum": 2.0,
+    "calculated_price": 105,
+    "profit_margin": 68
+  },
+  "GreenCrack_77": {
+    "strain": "Green Crack",
+    "price": 77,
+    "ingredients": [
+      "Viagra",
+      "Horse Semen"
+    ],
+    "effects": [
+      "Energizing",
+      "Tropic Thunder",
+      "Long Faced"
+    ],
+    "ingredient_cost": 13,
+    "type": "TBD",
+    "regions": [],
+    "regional_name": null,
+    "base_price": 35,
+    "multiplier_sum": 5.0,
+    "calculated_price": 210,
+    "profit_margin": 64
+  },
+  "GreenCrack_65": {
+    "strain": "Green Crack",
+    "price": 65,
+    "ingredients": [
+      "Gasoline",
+      "Viagra"
+    ],
+    "effects": [
+      "Bright-Eyed",
+      "Toxic",
+      "Tropic Thunder"
+    ],
+    "ingredient_cost": 9,
+    "type": "TBD",
+    "regions": [],
+    "regional_name": null,
+    "base_price": 35,
+    "multiplier_sum": 2.0,
+    "calculated_price": 105,
+    "profit_margin": 56
+  },
+  "GreenCrack_148": {
+    "strain": "Green Crack",
+    "price": 148,
+    "ingredients": [
+      "Gasoline",
+      "Paracetamol",
+      "Cuke",
+      "Banana",
+      "Gasoline",
+      "Cuke",
+      "Viagra",
+      "Banana"
+    ],
+    "effects": [
+      "Cyclopean",
+      "Tropic Thunder",
+      "Jennerising",
+      "Thought-Provoking",
+      "Anti-Gravity",
+      "Bright-Eyed",
+      "Energizing",
+      "Gingeritis"
+    ],
+    "ingredient_cost": 25,
+    "type": "TBD",
+    "regions": [
+      "Westville"
+    ],
+    "regional_name": "EnergizingJennerising Spike",
+    "base_price": 35,
+    "multiplier_sum": 7.56,
+    "calculated_price": 300,
+    "profit_margin": 123
+  },
+  "GreenCrack_106": {
+    "strain": "Green Crack",
+    "price": 106,
+    "ingredients": [
+      "Paracetamol",
+      "Cuke",
+      "Banana",
+      "Viagra",
+      "Donut"
+    ],
+    "effects": [
+      "Jennerising",
+      "Sneaky",
+      "Thought-Provoking",
+      "Gingeritis",
+      "Tropic Thunder",
+      "Calorie-Dense"
+    ],
+    "ingredient_cost": 14,
+    "type": "TBD",
+    "regions": [
+      "Westville"
+    ],
+    "regional_name": "JennerisingGingeritis Crash",
+    "base_price": 35,
+    "multiplier_sum": 5.0,
+    "calculated_price": 210,
+    "profit_margin": 92
+  },
+  "GreenCrack_116": {
+    "strain": "Green Crack",
+    "price": 116,
+    "ingredients": [
+      "Addy",
+      "Battery",
+      "Chili",
+      "Iodine",
+      "Viagra"
+    ],
+    "effects": [
+      "Energizing",
+      "Thought-Provoking",
+      "Bright-Eyed",
+      "Spicy",
+      "Jennerising",
+      "Tropic Thunder"
+    ],
+    "ingredient_cost": 36,
+    "type": "TBD",
+    "regions": [
+      "Westville"
+    ],
+    "regional_name": "JennerisingBright-eyed Spike",
+    "base_price": 35,
+    "multiplier_sum": 6.0,
+    "calculated_price": 245,
+    "profit_margin": 80
+  },
+  "GreenCrack_120": {
+    "strain": "Green Crack",
+    "price": 120,
+    "ingredients": [
+      "Donut",
+      "Flu Medicine",
+      "Viagra",
+      "Battery",
+      "Addy",
+      "Iodine"
+    ],
+    "effects": [
+      "Energizing",
+      "Calorie-Dense",
+      "Gingeritis",
+      "Tropic Thunder",
+      "Bright-Eyed",
+      "Thought-Provoking",
+      "Jennerising"
+    ],
+    "ingredient_cost": 37,
+    "type": "TBD",
+    "regions": [
+      "Westville"
+    ],
+    "regional_name": "TropicEnergizing Dream",
+    "base_price": 35,
+    "multiplier_sum": 8.0,
+    "calculated_price": 315,
+    "profit_margin": 83
+  },
+  "GrandaddyPurple_139": {
+    "strain": "Grandaddy Purple",
+    "price": 139,
+    "ingredients": [
+      "Viagra",
+      "Paracetamol",
+      "Energy Drink",
+      "Cuke",
+      "Banana",
+      "Paracetamol",
+      "Motor Oil"
+    ],
+    "effects": [
+      "Anti-Gravity",
+      "Tropic Thunder",
+      "Jennerising",
+      "Athletic",
+      "Thought-Provoking",
+      "Gingeritis",
+      "Sneaky",
+      "Slippery"
+    ],
+    "ingredient_cost": 26,
+    "type": "TBD",
+    "regions": [],
+    "regional_name": null,
+    "base_price": 35,
+    "multiplier_sum": 6.0,
+    "calculated_price": 245,
+    "profit_margin": 113
+  },
+  "GrandaddyPurple_101": {
+    "strain": "Grandaddy Purple",
+    "price": 101,
+    "ingredients": [
+      "Addy",
+      "Battery",
+      "Mega Bean",
+      "Flu Medicine",
+      "Cuke"
+    ],
+    "effects": [
+      "Thought-Provoking",
+      "Energizing",
+      "Bright-Eyed",
+      "Cyclopean",
+      "Sedating"
+    ],
+    "ingredient_cost": 31,
+    "type": "TBD",
+    "regions": [],
+    "regional_name": null,
+    "base_price": 35,
+    "multiplier_sum": 7.56,
+    "calculated_price": 300,
+    "profit_margin": 70
+  },
+  "GrandaddyPurple_74": {
+    "strain": "Grandaddy Purple",
+    "price": 74,
+    "ingredients": [
+      "Energy Drink",
+      "Paracetamol"
+    ],
+    "effects": [
+      "Anti-Gravity",
+      "Athletic",
+      "Sneaky"
+    ],
+    "ingredient_cost": 9,
+    "type": "TBD",
+    "regions": [],
+    "regional_name": null,
+    "base_price": 35,
+    "multiplier_sum": 5.0,
+    "calculated_price": 210,
+    "profit_margin": 65
+  },
+  "GrandaddyPurple_167": {
+    "strain": "Grandaddy Purple",
+    "price": 167,
+    "ingredients": [
+      "Banana",
+      "Cuke",
+      "Paracetamol",
+      "Gasoline",
+      "Cuke",
+      "Battery",
+      "Horse Semen",
+      "Mega Bean"
+    ],
+    "effects": [
+      "Sedating",
+      "Electrifying",
+      "Glowing",
+      "Tropic Thunder",
+      "Zombifying",
+      "Cyclopean",
+      "Bright-Eyed",
+      "Long Faced"
+    ],
+    "ingredient_cost": 38,
+    "type": "TBD",
+    "regions": [],
+    "regional_name": null,
+    "base_price": 35,
+    "multiplier_sum": 6.14,
+    "calculated_price": 250,
+    "profit_margin": 129
+  }
+}

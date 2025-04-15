@@ -1,0 +1,34 @@
+{
+  "ogkush_127_fb0060": {
+    "strain": "OG Kush",
+    "price": 127,
+    "ingredients": [
+      "Donut",
+      "Mouth Wash",
+      "Cuke",
+      "Banana",
+      "Viagra",
+      "Flu Medicine"
+    ],
+    "effects": [
+      "Anti-Gravity",
+      "Jennerising",
+      "Balding",
+      "Thought-Provoking",
+      "Gingeritis",
+      "Tropic Thunder",
+      "Sedating"
+    ],
+    "ingredient_cost": 20,
+    "type": "standard",
+    "regions": [],
+    "regional_name": null,
+    "base_price": 35,
+    "multiplier_sum": 3.0,
+    "calculated_price": 140,
+    "profit_margin": 107,
+    "ingredients_count": 6,
+    "effect_count": 7,
+    "efficiency_score": 0.15
+  }
+}
