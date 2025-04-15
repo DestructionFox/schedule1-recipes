@@ -1,19 +1,62 @@
-.ingredient-step {
-  display: inline-block;
-  text-align: center;
-  margin: 10px;
-  width: 100px;
+
+body {
+    background-color: #111;
+    color: #eee;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 20px;
 }
 
-.ingredient-step img {
-  display: block;
-  width: 64px;
-  height: 64px;
-  margin: 0 auto;
+h3 {
+    margin-top: 0;
+    color: #ccc;
 }
 
-.ingredient-step span {
-  display: block;
-  margin-top: 5px;
-  font-size: 0.9em;
+.tabButton {
+    margin: 5px;
+    padding: 10px 20px;
+    background: #222;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.tabButton.active,
+.tabButton:hover {
+    background-color: #555;
+}
+
+.strainSection {
+    display: none;
+    margin-top: 30px;
+}
+
+.recipeCard {
+    background: #1a1a1a;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    box-shadow: 0 0 8px rgba(0,255,128,0.1);
+}
+
+.ingredient-icon {
+    height: 28px;
+    vertical-align: middle;
+    margin-right: 8px;
+    border-radius: 4px;
+}
+
+.effect {
+    display: inline-block;
+    margin: 3px 6px 3px 0;
+    padding: 4px 10px;
+    background: #2e2e2e;
+    border-radius: 6px;
+    font-size: 0.9em;
+    color: #ccc;
+    border: 1px solid #444;
 }

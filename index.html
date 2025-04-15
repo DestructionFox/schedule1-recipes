@@ -1,14 +1,64 @@
-<div class="recipe-row">
-  <div class="ingredient-step">
-    <img src="assets/images/Banana_Icon.webp" alt="Banana">
-    <span>1. Banana</span>
+<html>
+ <head>
+  <title>
+   Schedule 1 Recipes
+  </title>
+  <link href="assets/styles/style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div>
+   <button class="tabButton" id="GrandaddyPurple_tab" onclick="showStrain('GrandaddyPurple')">
+    Grandaddy Purple
+   </button>
+   <button class="tabButton" id="GreenCrack_tab" onclick="showStrain('GreenCrack')">
+    Green Crack
+   </button>
+   <button class="tabButton" id="OGKush_tab" onclick="showStrain('OGKush')">
+    OG Kush
+   </button>
+   <button class="tabButton" id="SourDiesel_tab" onclick="showStrain('SourDiesel')">
+    Sour Diesel
+   </button>
+   <button class="tabButton" id="Regional_tab" onclick="showStrain('Regional')">
+    Top Regional Picks
+   </button>
   </div>
-  <div class="ingredient-step">
-    <img src="assets/images/Cuke_Icon.webp" alt="Cuke">
-    <span>2. Cuke</span>
+  <div class="strainSection" id="GrandaddyPurple">
+   <h2>
+    Grandaddy Purple
+   </h2>
+   <div id="GrandaddyPurple_Recipes">
+   </div>
   </div>
-  <div class="ingredient-step">
-    <img src="assets/images/Paracetamol_Icon.webp" alt="Paracetamol">
-    <span>3. Paracetamol</span>
+  <div class="strainSection" id="GreenCrack">
+   <h2>
+    GreenCrack
+   </h2>
+   <div id="GreenCrack_Recipes">
+   </div>
   </div>
-</div>
+  <div class="strainSection" id="OGKush">
+   <h2>
+    OG Kush
+   </h2>
+   <div id="OGKush_Recipes">
+   </div>
+  </div>
+  <div class="strainSection" id="SourDiesel">
+   <h2>
+    SourDiesel
+   </h2>
+   <div id="SourDiesel_Recipes">
+   </div>
+  </div>
+  <div class="strainSection" id="Regional">
+   <h2>
+    🌍 Top Recipes by Region
+   </h2>
+   <div id="regionalContent">
+   </div>
+  </div>
+  <script src="main.js">
+  </script>
+ </body>
+</html>
