@@ -1,4 +1,3 @@
-
 function showStrain(id) {
   document.querySelectorAll('.strainSection').forEach(div => div.style.display = 'none');
   document.querySelectorAll('.tabButton').forEach(btn => btn.classList.remove('active'));
@@ -40,23 +39,25 @@ async function loadStrainRecipes() {
     "Grandaddy Purple": "GrandaddyPurple"
   };
 
-  Object.entries(strainMap).forEach(([strainName, id]) => {
+  for (const [strainName, id] of Object.entries(strainMap)) {
     const container = document.getElementById(id + "_Recipes");
-    Object.values(recipes)
-      .filter(r => r.strain === strainName)
-      .forEach(recipe => {
-        const card = document.createElement('div');
-        card.className = 'recipeCard';
-        card.innerHTML = `
-          <h3>${recipe.name} — $${recipe.price}</h3>
-          <strong>Ingredients:</strong><br>
-          ${recipe.ingredients.map(i => `<img class="ingredient-icon" src="assets/images/${i.replace(/ /g,'_')}_Icon.webp" alt="${i}"> ${i}`).join(' ')}
-          <br><strong>Effects:</strong><br>
-          ${recipe.effects.map(e => `<span class="effect">${e}</span>`).join(' ')}
-        `;
-        container.appendChild(card);
-      });
-  });
+    if (!container) continue;
+
+    for (const [uid, recipe] of Object.entries(recipes)) {
+      if (recipe.strain !== strainName) continue;
+
+      const card = document.createElement('div');
+      card.className = 'recipeCard';
+      card.innerHTML = `
+        <h3>${recipe.name || uid} — $${recipe.price}</h3>
+        <strong>Ingredients:</strong><br>
+        ${recipe.ingredients.map(i => `<img class="ingredient-icon" src="assets/images/${i.replace(/ /g,'_')}_Icon.webp" alt="${i}"> ${i}`).join(' ')}
+        <br><strong>Effects:</strong><br>
+        ${recipe.effects.map(e => `<span class="effect">${e}</span>`).join(' ')}
+      `;
+      container.appendChild(card);
+    }
+  }
 }
 
 window.onload = () => {
