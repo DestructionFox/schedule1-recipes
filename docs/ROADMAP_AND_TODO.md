@@ -1,49 +1,71 @@
-# 📌 Schedule 1 Recipe Site – Roadmap & TODO
-_Last updated: 2025-04-14_
+# 📌 Schedule 1 – Roadmap & To-Do Tracker
+
+This roadmap tracks major goals, features, and module assignments in the Schedule 1 Recipe Viewer project. It includes current priorities, long-term stretch goals, and chat dependencies.
 
 ---
 
-## ✅ Completed
-- Functional tab-based navigation (Strain tabs & Regional Picks)
-- Image icons correctly loading for ingredients and strains
-- Recipes and effects sourced from JSON
-- Folder reorganization (`assets/`, `data/`, `docs/`)
-- GitHub Pages deployment structure verified
+## 🎯 CORE GOALS
+
+- [x] Display complete, accurate recipe data for each weed strain
+- [x] Sort and filter by effects, cost, region, ingredient
+- [x] Host site on GitHub Pages with optimized frontend
+- [ ] Support multiple base drug types (future: meth, cocaine, etc.)
 
 ---
 
-## 🚧 In Progress
-- [ ] Hook up dynamic color styling for effects (via `effect_colors.json`)
-- [ ] Full JS module split (move logic out of `index.html`)
-- [ ] Add new region recipes to JSON and view
-- [ ] Improve tab styling and visual polish
-- [ ] Fix initial tab load issue (auto-default tab on open)
+## 🔧 Utility & Testing Features
+
+- [x] Set up `/test-env/` folder and file structure
+- [ ] ✅ **Add toggle or button for switching to test environment**
+  - Implement button or toggle in UI that loads `test-index.html` from `/test-env/`
+  - Coordinate with: 🔍 C2 (if filters are affected), 🧪 D1 for handling rendering logic
+- [ ] Create reusable test boilerplate files (HTML/JS/CSS) in `/test-env/`
 
 ---
 
-## 🛠 TODO / Next Steps
+## 📄 UI/UX Goals
 
-### 🔧 Features
-- [ ] Add search bar / live filter for recipes
-- [ ] Include effect descriptions (tooltip or info box)
-- [ ] Highlight “Most Profitable” / “Shortest” recipes
-- [ ] Add option to sort by price, effect count, etc.
-- [ ] Future plan: regional ingredient/shop availability
-
-### 🎨 Visual Improvements
-- [ ] Implement effect color mapping in DOM
-- [ ] Add light/dark mode toggle
-- [ ] Add tag hover effects and better spacing
-- [ ] Consider icons for effects
-
-### 🔄 GitHub Deployment
-- [ ] Add GitHub Action for auto-deploy (optional)
-- [ ] Add option to use custom domain later
+- [ ] Build dynamic recipe comparator UI
+- [ ] Add production calculator for batch mix planning
+- [ ] Show ingredient order with proper spacing and item count
+- [ ] Add effect hover-tooltips with wiki popup option
+- [ ] Add clickable effect filters to recipes
+- [ ] Show cost and profit details per recipe card
+- [ ] Implement grid vs. list toggle on Ingredient Viewer
+- [ ] Add consistent navbar + toggle menu (Hamburger + side menu)
+- [ ] Include help/tutorial icon for onboarding
 
 ---
 
-## 🧠 Ideas for Later
-- In-browser recipe calculator (what can I make with X?)
-- Shareable URLs (e.g., recipe viewer by link)
-- Mobile responsive design pass
-- Localization (Hebrew version?)
+## 🔍 Filtering & Search
+
+- [ ] Smart filter UI (region, strain, cost, effect)
+- [ ] Combine ingredient and effect filtering into unified bar
+- [ ] Allow bookmarking filters or saving last view
+- [ ] Add toggle for sort mode (profit, steps, cost efficiency)
+
+---
+
+## 📚 Docs & Metadata
+
+- [x] Create `Schedule1_Chat_Module_Index.md`
+- [x] Create `Workflow_Roles_and_Communication.md`
+- [x] Finish `Schedule1_Complete_Effect_Guide.md`
+- [ ] Polish `Ingredients.md` with pricing and effects
+- [ ] Add player-facing help guide (`How_To_Mix.md`)
+- [ ] Create `Schedule1_Dev_Tips.md` for contributors
+
+---
+
+## 🌀 Stretch Features
+
+- [ ] Uncle Nelson onboarding script (dialog, flow, dismiss button)
+- [ ] Fusion simulator (effect chaining)
+- [ ] Favorites system (local save with cookies/sessionStorage)
+- [ ] Mobile UI reflow and resizing logic
+- [ ] Full multi-drug architecture switch (post-launch)
+
+---
+
+_Last updated: 2025-04-15_
+Maintained by: 🧠 Master Vision
