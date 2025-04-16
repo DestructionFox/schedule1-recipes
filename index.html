@@ -60,5 +60,34 @@
   </div>
   <script src="main.js">
   </script>
- </body>
+ <!-- Test Mode Button -->
+<style>
+#testModeBtn {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  background-color: #f59e0b;
+  color: #111;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 18px;
+  font-size: 16px;
+  z-index: 1000;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+#testModeBtn:hover {
+  background-color: #fbbf24;
+}
+</style>
+
+<button id="testModeBtn" onclick="openTestEnv()">Test Mode</button>
+
+<script>
+function openTestEnv() {
+  window.open('test-env/test-index.html', '_blank');
+}
+</script>
+</body>
 </html>
