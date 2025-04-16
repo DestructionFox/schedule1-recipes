@@ -29,8 +29,8 @@ async function loadRegionalTop() {
 }
 
 async function loadStrainRecipes() {
-  const response = await fetch('data/schedule1_all_recipes_named.json');
-  const recipes = await response.json();
+  const response = await fetch('data/uid_enhanced_recipe_registry_smart_tags.json');
+  const data = await response.json();
 
   const strainMap = {
     "OG Kush": "OGKush",
@@ -39,22 +39,27 @@ async function loadStrainRecipes() {
     "Grandaddy Purple": "GrandaddyPurple"
   };
 
-  Object.entries(strainMap).forEach(([strainName, id]) => {
+  for (const [strainName, id] of Object.entries(strainMap)) {
     const container = document.getElementById(id + "_Recipes");
-    const strainRecipes = recipes.filter(r => r["Base Strain"] === strainName);
-    strainRecipes.forEach(recipe => {
+    if (!container) continue;
+
+    const recipes = Object.entries(data)
+      .filter(([uid, r]) => r.base_strain === strainName)
+      .map(([uid, r]) => ({ uid, ...r }));
+
+    recipes.forEach(recipe => {
       const card = document.createElement('div');
       card.className = 'recipeCard';
       card.innerHTML = `
-        <h3>${recipe.Name} — ${recipe["Sell Price"]}</h3>
+        <h3>${recipe.name || recipe.uid} — $${recipe.price_per_gram}/g</h3>
         <strong>Ingredients:</strong><br>
-        ${recipe.Ingredients.map(i => `<img class="ingredient-icon" src="assets/images/${i.replace(/ /g,'_')}_Icon.webp" alt="${i}"> ${i}`).join(' ')}
+        ${recipe.ingredients.map(i => `<img class="ingredient-icon" src="assets/images/${i.replace(/ /g,'_')}_Icon.webp" alt="${i}"> ${i}`).join(' ')}
         <br><strong>Effects:</strong><br>
-        ${recipe.Effects.map(e => `<span class="effect">${e}</span>`).join(' ')}
+        ${recipe.effects.map(e => `<span class="effect">${e}</span>`).join(' ')}
       `;
       container.appendChild(card);
     });
-  });
+  }
 }
 
 window.onload = () => {
