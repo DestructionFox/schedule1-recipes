@@ -1,3 +1,4 @@
+
 function showStrain(id) {
   document.querySelectorAll('.strainSection').forEach(div => div.style.display = 'none');
   document.querySelectorAll('.tabButton').forEach(btn => btn.classList.remove('active'));
@@ -30,7 +31,7 @@ async function loadRegionalTop() {
 
 async function loadStrainRecipes() {
   const response = await fetch('data/uid_enhanced_recipe_registry_smart_tags.json');
-  const data = await response.json();
+  const recipes = await response.json();
 
   const strainMap = {
     "OG Kush": "OGKush",
@@ -39,27 +40,23 @@ async function loadStrainRecipes() {
     "Grandaddy Purple": "GrandaddyPurple"
   };
 
-  for (const [strainName, id] of Object.entries(strainMap)) {
+  Object.entries(strainMap).forEach(([strainName, id]) => {
     const container = document.getElementById(id + "_Recipes");
-    if (!container) continue;
-
-    const recipes = Object.entries(data)
-      .filter(([uid, r]) => r.base_strain === strainName)
-      .map(([uid, r]) => ({ uid, ...r }));
-
-    recipes.forEach(recipe => {
-      const card = document.createElement('div');
-      card.className = 'recipeCard';
-      card.innerHTML = `
-        <h3>${recipe.name || recipe.uid} — $${recipe.price_per_gram}/g</h3>
-        <strong>Ingredients:</strong><br>
-        ${recipe.ingredients.map(i => `<img class="ingredient-icon" src="assets/images/${i.replace(/ /g,'_')}_Icon.webp" alt="${i}"> ${i}`).join(' ')}
-        <br><strong>Effects:</strong><br>
-        ${recipe.effects.map(e => `<span class="effect">${e}</span>`).join(' ')}
-      `;
-      container.appendChild(card);
-    });
-  }
+    Object.values(recipes)
+      .filter(r => r.strain === strainName)
+      .forEach(recipe => {
+        const card = document.createElement('div');
+        card.className = 'recipeCard';
+        card.innerHTML = `
+          <h3>${recipe.name} — $${recipe.price}</h3>
+          <strong>Ingredients:</strong><br>
+          ${recipe.ingredients.map(i => `<img class="ingredient-icon" src="assets/images/${i.replace(/ /g,'_')}_Icon.webp" alt="${i}"> ${i}`).join(' ')}
+          <br><strong>Effects:</strong><br>
+          ${recipe.effects.map(e => `<span class="effect">${e}</span>`).join(' ')}
+        `;
+        container.appendChild(card);
+      });
+  });
 }
 
 window.onload = () => {
