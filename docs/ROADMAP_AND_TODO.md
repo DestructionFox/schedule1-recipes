@@ -69,3 +69,11 @@ This roadmap tracks major goals, features, and module assignments in the Schedul
 
 _Last updated: 2025-04-15_
 Maintained by: 🧠 Master Vision
+
+
+## 🔧 Test Environment Toggle (High Priority)
+
+- [ ] Implement a persistent button to toggle between production and test environments.
+- [ ] Ensure the button clearly indicates the active environment.
+- [ ] Safely isolate all test features in the `/test-env/` directory.
+- [ ] Test thoroughly to ensure no cross-contamination between production and test assets.
