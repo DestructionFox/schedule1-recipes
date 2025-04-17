@@ -1,3 +1,4 @@
+
 # 📌 Project Commands Guide
 
 This guide documents all standard project commands you can use across Schedule 1 project chats to enhance communication, streamline workflows, and manage tasks effectively.
@@ -156,33 +157,4 @@ This file contains standardized commands to be used across all chats within the 
 
 ---
 
-Together we are perfect.## 🧠 NEW COMMANDS AND UPDATES
-
-### 🔗 Batch Execution Support
-Chats can receive **multiple commands in one message**, and they will process them **in the order they are written**. Separate each command on a new line.
-
-Example:
-```
-/reset_scope
-/get_updates
-/log_task Fix broken filter buttons
-```
-
----
-
-## 🧠 Additional Recommended Commands
-
-### `/push_prompt`
-> Use after assigning or updating a chat's job. Injects the next required scoped message from 🧠 A1 or from the calling module.
-
-### `/assign [chat-name]`
-> Marks the target chat as responsible for the next task. Combines well with `/push_prompt` to delegate.
-
-### `/get_task_log`
-> Retrieves a chat's complete logged task history (useful for audits and status reporting).
-
-### `/auto_redirect`
-> Enables a chat to **automatically redirect** you to the correct module when you ask for something outside its scope.
-
-### `/watch [file or module]`
-> Marks a file or chat for **active sync watching** by a specific module. That module will poll or react to changes in it.
+Together we are perfect.
