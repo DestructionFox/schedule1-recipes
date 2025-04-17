@@ -1,0 +1,12 @@
+<style>
+.strain-ogkush-border { border: 3px solid #4caf50; }
+.strain-sourdiesel-border { border: 3px solid #ffee58; }
+.strain-greencrack-border { border: 3px solid #76ff03; }
+.strain-grandaddypurple-border { border: 3px solid #ab47bc; }
+.region-label {
+  font-weight: bold;
+  font-size: 0.9em;
+  margin-top: 6px;
+  color: #ccc;
+}
+</style>

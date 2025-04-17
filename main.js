@@ -46,10 +46,13 @@ async function loadStrainRecipes() {
     for (const [uid, recipe] of Object.entries(recipes)) {
       if (recipe.strain !== strainName) continue;
 
+      const cssClass = `strain-${strainName.toLowerCase().replace(/ /g, '')}-border`;
+      const region = recipe.best_region || 'Unknown';
       const card = document.createElement('div');
-      card.className = 'recipeCard';
+      card.className = 'recipeCard ' + cssClass;
       card.innerHTML = `
         <h3>${recipe.name || uid} — $${recipe.price}</h3>
+        <div class="region-label">🏙️ Best in ${region}</div>
         <strong>Ingredients:</strong><br>
         ${recipe.ingredients.map(i => `<img class="ingredient-icon" src="assets/images/${i.replace(/ /g,'_')}_Icon.webp" alt="${i}"> ${i}`).join(' ')}
         <br><strong>Effects:</strong><br>

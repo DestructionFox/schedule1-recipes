@@ -186,22 +186,3 @@ Example:
 
 ### `/watch [file or module]`
 > Marks a file or chat for **active sync watching** by a specific module. That module will poll or react to changes in it.
----
-
-## 📂 New Rule: File Output Declaration
-
-Every time a chat generates or modifies a file, it must provide the following table to clearly state:
-
-| Purpose | Filename | Save To | Replaces | Backup Location |
-|--------|----------|---------|----------|-----------------|
-| What does it do? | file_name.json | /data/, /docs/, /assets/, etc. | Which file it updates (if any) | Path to backup original (/data/Legacy/, etc.) |
-
-**Example:**
-
-| Purpose | Filename | Save To | Replaces | Backup Location |
-|--------|----------|---------|----------|-----------------|
-| Final production recipe dataset | uid_enhanced_recipe_registry_smart_tags.json | /data/ | Replaces schedule1_all_recipes_named.json | /data/Legacy/ |
-
-All output files MUST be traceable. Do not overwrite without declaring your action. This is a global rule across all modules.
-
----
