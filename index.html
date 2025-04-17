@@ -1,93 +1,58 @@
-<html>
- <head>
-  <title>
-   Schedule 1 Recipes
-  </title>
-  <link href="assets/styles/style.css" rel="stylesheet"/>
- </head>
- <body>
-  <div>
-   <button class="tabButton" id="GrandaddyPurple_tab" onclick="showStrain('GrandaddyPurple')">
-    Grandaddy Purple
-   </button>
-   <button class="tabButton" id="GreenCrack_tab" onclick="showStrain('GreenCrack')">
-    Green Crack
-   </button>
-   <button class="tabButton" id="OGKush_tab" onclick="showStrain('OGKush')">
-    OG Kush
-   </button>
-   <button class="tabButton" id="SourDiesel_tab" onclick="showStrain('SourDiesel')">
-    Sour Diesel
-   </button>
-   <button class="tabButton" id="Regional_tab" onclick="showStrain('Regional')">
-    Top Regional Picks
-   </button>
-  </div>
-  <div class="strainSection" id="GrandaddyPurple">
-   <h2>
-    Grandaddy Purple
-   </h2>
-   <div id="GrandaddyPurple_Recipes">
-   </div>
-  </div>
-  <div class="strainSection" id="GreenCrack">
-   <h2>
-    GreenCrack
-   </h2>
-   <div id="GreenCrack_Recipes">
-   </div>
-  </div>
-  <div class="strainSection" id="OGKush">
-   <h2>
-    OG Kush
-   </h2>
-   <div id="OGKush_Recipes">
-   </div>
-  </div>
-  <div class="strainSection" id="SourDiesel">
-   <h2>
-    SourDiesel
-   </h2>
-   <div id="SourDiesel_Recipes">
-   </div>
-  </div>
-  <div class="strainSection" id="Regional">
-   <h2>
-    🌍 Top Recipes by Region
-   </h2>
-   <div id="regionalContent">
-   </div>
-  </div>
-  <script src="main.js">
-  </script>
- <!-- Test Mode Button -->
-<style>
-#testModeBtn {
-  position: fixed;
-  top: 16px;
-  right: 16px;
-  background-color: #f59e0b;
-  color: #111;
-  font-weight: bold;
-  border: none;
-  border-radius: 8px;
-  padding: 12px 18px;
-  font-size: 16px;
-  z-index: 1000;
-  cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
-}
-#testModeBtn:hover {
-  background-color: #fbbf24;
-}
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Schedule 1 Recipes</title>
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <link rel="stylesheet" href="assets/styles/strain_color_styles.css">
+</head>
+<body>
 
+<div class="tabBar">
+  <button class="tabButton" id="OGKush_tab" onclick="showStrain('OGKush')">OG Kush</button>
+  <button class="tabButton" id="SourDiesel_tab" onclick="showStrain('SourDiesel')">Sour Diesel</button>
+  <button class="tabButton" id="GreenCrack_tab" onclick="showStrain('GreenCrack')">Green Crack</button>
+  <button class="tabButton" id="GrandaddyPurple_tab" onclick="showStrain('GrandaddyPurple')">Grandaddy Purple</button>
+  <button class="tabButton active" id="Regional_tab" onclick="showStrain('Regional')">Top Regional Picks</button>
+</div>
+
+<!-- Strain sections -->
+<div class="strainSection" id="OGKush" style="display: none;">
+  <h2>🌿 OG Kush</h2>
+  <div id="OGKush_Recipes"></div>
+</div>
+
+<div class="strainSection" id="SourDiesel" style="display: none;">
+  <h2>⚡ Sour Diesel</h2>
+  <div id="SourDiesel_Recipes"></div>
+</div>
+
+<div class="strainSection" id="GreenCrack" style="display: none;">
+  <h2>🔥 Green Crack</h2>
+  <div id="GreenCrack_Recipes"></div>
+</div>
+
+<div class="strainSection" id="GrandaddyPurple" style="display: none;">
+  <h2>🟣 Grandaddy Purple</h2>
+  <div id="GrandaddyPurple_Recipes"></div>
+</div>
+
+<!-- Regional section -->
+<div class="strainSection" id="Regional" style="display: block;">
+  <h2>🌍 Top Recipes by Region</h2>
+  <div id="regionalContent"></div>
+</div>
+
+<!-- Test Mode Toggle -->
 <button id="testModeBtn" onclick="openTestEnv()">Test Mode</button>
-
 <script>
 function openTestEnv() {
   window.open('test-env/test-index.html', '_blank');
 }
 </script>
+
+<!-- Main JS -->
+<script src="main.js"></script>
+
 </body>
 </html>
