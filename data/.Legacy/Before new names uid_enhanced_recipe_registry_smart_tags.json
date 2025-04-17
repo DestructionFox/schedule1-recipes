@@ -29,8 +29,7 @@
     "profit_margin": 107,
     "ingredients_count": 6,
     "effect_count": 7,
-    "efficiency_score": 0.15,
-    "name": "OG Kush Durkle Thought Crack"
+    "efficiency_score": 0.15
   },
   "ogkush_118_cec755": {
     "strain": "OG Kush",
@@ -60,8 +59,7 @@
     "profit_margin": 103,
     "ingredients_count": 5,
     "effect_count": 6,
-    "efficiency_score": 0.133,
-    "name": "OG Kush Slimy Anti Grool"
+    "efficiency_score": 0.133
   },
   "ogkush_80_9bdf3e": {
     "strain": "OG Kush",
@@ -87,8 +85,7 @@
     "profit_margin": 74,
     "ingredients_count": 3,
     "effect_count": 4,
-    "efficiency_score": 0.833,
-    "name": "OG Kush Wedding Thought Slime"
+    "efficiency_score": 0.833
   },
   "ogkush_103_b31e7e": {
     "strain": "OG Kush",
@@ -116,8 +113,7 @@
     "profit_margin": 91,
     "ingredients_count": 4,
     "effect_count": 5,
-    "efficiency_score": 0.167,
-    "name": "OG Kush Death Gingeritis Stink"
+    "efficiency_score": 0.167
   },
   "ogkush_164_a7a4b7": {
     "strain": "OG Kush",
@@ -181,8 +177,7 @@
     "profit_margin": 86,
     "ingredients_count": 4,
     "effect_count": 5,
-    "efficiency_score": 0.13,
-    "name": "OG Kush LA Tropic Cake"
+    "efficiency_score": 0.13
   },
   "ogkush_172_54e9c4": {
     "strain": "OG Kush",
@@ -253,8 +248,7 @@
     "profit_margin": 117,
     "ingredients_count": 7,
     "effect_count": 8,
-    "efficiency_score": 0.316,
-    "name": "OG Kush White Jennerising Cock"
+    "efficiency_score": 0.316
   },
   "sourdiesel_71_d57c44": {
     "strain": "Sour Diesel",
@@ -280,8 +274,7 @@
     "profit_margin": 62,
     "ingredients_count": 3,
     "effect_count": 4,
-    "efficiency_score": 0.667,
-    "name": "Sour Diesel Super Gingeritis Cock"
+    "efficiency_score": 0.667
   },
   "sourdiesel_81_8c97bb": {
     "strain": "Sour Diesel",
@@ -307,8 +300,7 @@
     "profit_margin": 67,
     "ingredients_count": 3,
     "effect_count": 4,
-    "efficiency_score": 0.397,
-    "name": "Sour Diesel Death Cyclopean Fuel"
+    "efficiency_score": 0.397
   },
   "sourdiesel_112_99d5ac": {
     "strain": "Sour Diesel",
@@ -341,8 +333,7 @@
     "profit_margin": 79,
     "ingredients_count": 7,
     "effect_count": 7,
-    "efficiency_score": 0.455,
-    "name": "Sour Diesel Mega Athletic Ghost"
+    "efficiency_score": 0.455
   },
   "sourdiesel_144_cd5cec": {
     "strain": "Sour Diesel",
@@ -408,8 +399,7 @@
     "profit_margin": 77,
     "ingredients_count": 5,
     "effect_count": 6,
-    "efficiency_score": 0.32,
-    "name": "Sour Diesel OG Glowing Grool"
+    "efficiency_score": 0.32
   },
   "sourdiesel_85_45f946": {
     "strain": "Sour Diesel",
@@ -433,8 +423,7 @@
     "profit_margin": 68,
     "ingredients_count": 2,
     "effect_count": 3,
-    "efficiency_score": 0.118,
-    "name": "Sour Diesel Super Electrifying Cum"
+    "efficiency_score": 0.118
   },
   "greencrack_77_9c635a": {
     "strain": "Green Crack",
@@ -458,8 +447,7 @@
     "profit_margin": 64,
     "ingredients_count": 2,
     "effect_count": 3,
-    "efficiency_score": 0.385,
-    "name": "Green Crack Bio Tropic Diesel"
+    "efficiency_score": 0.385
   },
   "greencrack_65_c63fcf": {
     "strain": "Green Crack",
@@ -483,8 +471,7 @@
     "profit_margin": 56,
     "ingredients_count": 2,
     "effect_count": 3,
-    "efficiency_score": 0.222,
-    "name": "Green Crack Tokyo Toxic Stink"
+    "efficiency_score": 0.222
   },
   "greencrack_148_01d591": {
     "strain": "Green Crack",
@@ -653,8 +640,7 @@
     "profit_margin": 113,
     "ingredients_count": 7,
     "effect_count": 8,
-    "efficiency_score": 0.231,
-    "name": "Grandaddy Purple Aspen Slippery Cock"
+    "efficiency_score": 0.231
   },
   "grandaddypurple_101_8f16e0": {
     "strain": "Grandaddy Purple",
@@ -683,8 +669,7 @@
     "profit_margin": 70,
     "ingredients_count": 5,
     "effect_count": 5,
-    "efficiency_score": 0.244,
-    "name": "Grandaddy Purple Fruity Thought Death"
+    "efficiency_score": 0.244
   },
   "grandaddypurple_74_997a06": {
     "strain": "Grandaddy Purple",
@@ -708,8 +693,7 @@
     "profit_margin": 65,
     "ingredients_count": 2,
     "effect_count": 3,
-    "efficiency_score": 0.556,
-    "name": "Grandaddy Purple Durkle Anti Death"
+    "efficiency_score": 0.556
   },
   "grandaddypurple_167_a57963": {
     "strain": "Grandaddy Purple",
@@ -744,7 +728,6 @@
     "profit_margin": 129,
     "ingredients_count": 8,
     "effect_count": 8,
-    "efficiency_score": 0.162,
-    "name": "Grandaddy Purple Dream Sedating Puke"
+    "efficiency_score": 0.162
   }
 }
