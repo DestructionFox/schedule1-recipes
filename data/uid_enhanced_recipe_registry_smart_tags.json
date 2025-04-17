@@ -153,7 +153,8 @@
     "profit_margin": 134,
     "ingredients_count": 7,
     "effect_count": 8,
-    "efficiency_score": 0.138
+    "efficiency_score": 0.138,
+    "name": "FoggyTropic Blast"
   },
   "ogkush_109_a1c917": {
     "strain": "OG Kush",
@@ -182,7 +183,7 @@
     "ingredients_count": 4,
     "effect_count": 5,
     "efficiency_score": 0.13,
-    "name": "OG Kush OG Slippery Taint"
+    "name": "OG Kush Exploding Slippery Goo"
   },
   "ogkush_172_54e9c4": {
     "strain": "OG Kush",
@@ -219,7 +220,8 @@
     "profit_margin": 128,
     "ingredients_count": 8,
     "effect_count": 8,
-    "efficiency_score": 0.094
+    "efficiency_score": 0.094,
+    "name": "FoggyTropic Trip"
   },
   "ogkush_136_5d736b": {
     "strain": "OG Kush",
@@ -281,7 +283,7 @@
     "ingredients_count": 3,
     "effect_count": 4,
     "efficiency_score": 0.667,
-    "name": "Sour Diesel Exploding Refreshing Diesel"
+    "name": "Sour Diesel Dumpster-Dipped Refreshing Haze"
   },
   "sourdiesel_81_8c97bb": {
     "strain": "Sour Diesel",
@@ -378,7 +380,8 @@
     "profit_margin": 111,
     "ingredients_count": 7,
     "effect_count": 8,
-    "efficiency_score": 0.212
+    "efficiency_score": 0.212,
+    "name": "Bright-eyedMunchies Storm"
   },
   "sourdiesel_102_a9504c": {
     "strain": "Sour Diesel",
@@ -521,7 +524,8 @@
     "profit_margin": 123,
     "ingredients_count": 8,
     "effect_count": 8,
-    "efficiency_score": 0.302
+    "efficiency_score": 0.302,
+    "name": "EnergizingJennerising Spike"
   },
   "greencrack_106_ace259": {
     "strain": "Green Crack",
@@ -553,7 +557,8 @@
     "profit_margin": 92,
     "ingredients_count": 5,
     "effect_count": 6,
-    "efficiency_score": 0.357
+    "efficiency_score": 0.357,
+    "name": "JennerisingGingeritis Crash"
   },
   "greencrack_116_d65955": {
     "strain": "Green Crack",
@@ -585,7 +590,8 @@
     "profit_margin": 80,
     "ingredients_count": 5,
     "effect_count": 6,
-    "efficiency_score": 0.167
+    "efficiency_score": 0.167,
+    "name": "JennerisingBright-eyed Spike"
   },
   "greencrack_120_8fa807": {
     "strain": "Green Crack",
@@ -619,7 +625,8 @@
     "profit_margin": 83,
     "ingredients_count": 6,
     "effect_count": 7,
-    "efficiency_score": 0.216
+    "efficiency_score": 0.216,
+    "name": "TropicEnergizing Dream"
   },
   "grandaddypurple_139_f33ed6": {
     "strain": "Grandaddy Purple",
