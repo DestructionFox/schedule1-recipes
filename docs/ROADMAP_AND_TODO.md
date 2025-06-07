@@ -16,9 +16,9 @@ This roadmap tracks major goals, features, and module assignments in the Schedul
 ## 🔧 Utility & Testing Features
 
 - [x] Set up `/test-env/` folder and file structure
-- [ ] ✅ **Add toggle or button for switching to test environment**
-  - Implement button or toggle in UI that loads `test-index.html` from `/test-env/`
-  - Coordinate with: 🔍 C2 (if filters are affected), 🧪 D1 for handling rendering logic
+- [x] ✅ **Add persistent toggle button for switching to the test environment**
+  - Implemented button in `index.html` that loads `test-index.html` from `/test-env/`
+  - Coordinated with 🔍 C2 and 🧪 D1 for rendering logic
 - [ ] Create reusable test boilerplate files (HTML/JS/CSS) in `/test-env/`
 
 ---
@@ -73,7 +73,7 @@ Maintained by: 🧠 Master Vision
 
 ## 🔧 Test Environment Toggle (High Priority)
 
-- [ ] Implement a persistent button to toggle between production and test environments.
-- [ ] Ensure the button clearly indicates the active environment.
-- [ ] Safely isolate all test features in the `/test-env/` directory.
-- [ ] Test thoroughly to ensure no cross-contamination between production and test assets.
+- [x] Implemented a persistent button to toggle between production and test environments.
+- [x] Button clearly labeled to indicate the active environment.
+- [x] Test features isolated in the `/test-env/` directory.
+- [x] Confirmed no cross-contamination between production and test assets.
