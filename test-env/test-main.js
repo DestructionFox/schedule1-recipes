@@ -6,7 +6,7 @@ function showStrain(id) {
 }
 
 async function loadRegionalTop() {
-  const response = await fetch('data/top_regional_recipes.json');
+  const response = await fetch('data/top_regional_recipes_with_regions.json');
   const data = await response.json();
   const container = document.getElementById('regionalContent');
   for (const region in data) {
