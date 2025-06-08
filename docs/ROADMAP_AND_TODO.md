@@ -49,8 +49,8 @@ This roadmap tracks major goals, features, and module assignments in the Schedul
 ## 📚 Docs & Metadata
 
 - [x] Create `Schedule1_Chat_Module_Index.md`
-- [x] Create `Workflow_Roles_and_Communication.md`
-- [x] Finish `Schedule1_Complete_Effect_Guide.md`
+- [x] Create `workflow-roles-and-communication.md`
+- [x] Finish `schedule1-complete-effect-guide.md`
 - [ ] Polish `Ingredients.md` with pricing and effects
 - [ ] Add player-facing help guide (`How_To_Mix.md`)
 - [ ] Create `Schedule1_Dev_Tips.md` for contributors

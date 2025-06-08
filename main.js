@@ -6,7 +6,7 @@ function showStrain(id) {
 }
 
 async function loadRegionalTop() {
-  const response = await fetch('data/top_regional_recipes_with_regions.json');
+  const response = await fetch('data/top-regional-recipes-by-region.json');
   const data = await response.json();
   const container = document.getElementById('regionalContent');
   for (const region in data) {
@@ -29,7 +29,7 @@ async function loadRegionalTop() {
 }
 
 async function loadStrainRecipes() {
-  const response = await fetch('data/uid_enhanced_recipe_registry_smart_tags.json');
+  const response = await fetch('data/recipe-registry-smart-tags.json');
   const recipes = await response.json();
 
   const strainMap = {

@@ -34,7 +34,7 @@ This document outlines all active ChatGPT project modules used in the Schedule 1
 ### 📘 B2 – Effect Logic & Pricing Doc Chat
 **Role:** Knowledge base and documentation engine for effect metadata  
 **Responsibilities:**
-- Manage `Schedule1_Complete_Effect_Guide.md`
+- Manage `schedule1-complete-effect-guide.md`
 - Validate price multipliers and rarity tiers
 - Maintain effect hover-tooltips and styling logic
 - Help filtering systems sort recipes by effects

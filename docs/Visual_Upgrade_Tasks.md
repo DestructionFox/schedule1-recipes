@@ -15,7 +15,7 @@ Implement visual indicators for:
 ## ✅ Required Changes
 
 ### 1. Regional Demand Display
-- Extract from: `best_region` field in `uid_enhanced_recipe_registry_smart_tags.json`
+- Extract from: `best_region` field in `recipe-registry-smart-tags.json`
 - Display as:
   - Top-right badge (`"🏙️ Best in: Downtown"`)
   - Tooltip with full `regional_affinity` data (optional)
@@ -56,7 +56,7 @@ Prompt to deliver:
 ```
 🎯 Visual Upgrade – Recipe Viewer
 
-You’re now tasked with rendering new visual data from `uid_enhanced_recipe_registry_smart_tags.json`.
+You’re now tasked with rendering new visual data from `recipe-registry-smart-tags.json`.
 
 ✅ Add:
 1. A label showing `best_region` on each recipe card (e.g., “Best in Downtown”)

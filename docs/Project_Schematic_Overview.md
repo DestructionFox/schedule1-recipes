@@ -8,26 +8,26 @@ This document outlines the full architecture and data flow for the Schedule 1 Re
 - HTML: [index.html]  
   - Links to the shared CSS and strain color stylesheets, sets up strain tabs, a regional section, and the \u201cTest Mode\u201d button leading to `/test-env/`
 - JS: [main.js renders recipes]  
-  - `loadRegionalTop()` pulls from `data/top_regional_recipes_with_regions.json` and adds recipe cards per region  
-  - `loadStrainRecipes()` pulls from `data/uid_enhanced_recipe_registry_smart_tags.json`, builds cards with strain-specific borders and a region label  
+  - `loadRegionalTop()` pulls from `data/top-regional-recipes-by-region.json` and adds recipe cards per region  
+  - `loadStrainRecipes()` pulls from `data/recipe-registry-smart-tags.json`, builds cards with strain-specific borders and a region label  
   - `showStrain()` toggles visible strain sections when tabs are clicked
 - CSS:  
   - `style.css` provides base layout, recipe card styling, and effect tag appearance  
   - `strain_color_styles.css` adds strain\u2011colored borders and the `.region-label` formatting
 
 ## \ud83d\udd39 DATA LAYER
-- `uid_enhanced_recipe_registry_smart_tags.json`: master recipe registry with strain, price, ingredients, effects, and `best_region` fields
-- `top_regional_recipes_with_regions.json`: preselected top recipes organized by region for the regional tab
+- `recipe-registry-smart-tags.json`: master recipe registry with strain, price, ingredients, effects, and `best_region` fields
+- `top-regional-recipes-by-region.json`: preselected top recipes organized by region for the regional tab
 - `effect_colors.json`: maps each effect to an RGB color used for styling and tooltips
 - `effect_fusions.json`: defines two-effect combinations that create a resulting effect
-- `effect_region_demand.json`: shows how popular each effect is across subregions
+- `effect-region-demand.json`: shows how popular each effect is across subregions
 - `ingredient_and_strain_icons.json`: associates each ingredient and strain with its icon path in `/assets/images`
 - `lexicon_adjectives.json` & `lexicon_nouns.json`: word lists used when automatically generating recipe names
 
 ## \ud83d\udd39 DOCS LAYER
-- `Schedule1_Complete_Effect_Guide.md`: detailed multipliers, effects, and usage math
+- `schedule1-complete-effect-guide.md`: detailed multipliers, effects, and usage math
 - `Schedule1_Chat_Module_Index.md`: roles and hierarchy for the project modules
-- `Workflow_Roles_and_Communication.md`: explains each module\u2019s responsibilities and communication rules
+- `workflow-roles-and-communication.md`: explains each module\u2019s responsibilities and communication rules
 - `UID_Generation_Guide.md`: explains UID format and generator function for recipes
 - Other docs: `Ingredients.md`, `Effects.md`, `ROADMAP_AND_TODO.md`, `Visual_Upgrade_Tasks.md`
 

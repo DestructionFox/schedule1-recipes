@@ -200,7 +200,7 @@ Every time a chat generates or modifies a file, it must provide the following ta
 
 | Purpose | Filename | Save To | Replaces | Backup Location |
 |--------|----------|---------|----------|-----------------|
-| Final production recipe dataset | uid_enhanced_recipe_registry_smart_tags.json | /data/ | Replaces schedule1_all_recipes_named.json | /data/Legacy/ |
+| Final production recipe dataset | recipe-registry-smart-tags.json | /data/ | Replaces schedule1_all_recipes_named.json | /data/Legacy/ |
 
 All output files MUST be traceable. Do not overwrite without declaring your action. This is a global rule across all modules.
 

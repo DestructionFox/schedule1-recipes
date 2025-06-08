@@ -36,7 +36,7 @@ To generate names, the following files are used:
 
 | File Name | Description |
 |-----------|-------------|
-| `uid_enhanced_recipe_registry_smart_tags.json` | Main recipe registry file with all structured recipe data |
+| `recipe-registry-smart-tags.json` | Main recipe registry file with all structured recipe data |
 | `lexicon_adjectives.json` | List of humorous/in-game-like adjectives |
 | `lexicon_nouns.json` | List of vulgar/funny nouns |
 | `effect_to_name_tokens.json` | Mapping of effects to nameable word fragments |

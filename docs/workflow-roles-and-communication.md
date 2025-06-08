@@ -33,7 +33,7 @@ This file defines the structure and internal logic of the Schedule 1 Recipe View
 - **Reports to:** 🧠 A1
 - **Feeds into:** C1 (UI Viewer), C2 (Search), D2 (color styling)
 - **Use this chat when:** You’re refining effect visuals, updating multipliers, or defining fusion logic.
-- **Maintains:** `Schedule1_Complete_Effect_Guide.md`
+- **Maintains:** `schedule1-complete-effect-guide.md`
 
 ---
 

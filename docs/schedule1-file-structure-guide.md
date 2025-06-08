@@ -65,14 +65,14 @@ This document outlines the purpose and usage of each key file in the Schedule 1 
 #### `top_regional_recipes.json`
 > Contains best picks by region (Westville, Docks, Uptown...)
 
-#### `top_regional_recipes_with_regions.json`
+#### `top-regional-recipes-by-region.json`
 > Same as above but each entry also includes its `Region` field for easier data joins
 
 ---
 
 ### MARKDOWN FILES
 
-#### `Schedule1_Complete_Effect_Guide.md`
+#### `schedule1-complete-effect-guide.md`
 - Explanation of all effect types
 - Rarity / fusion / regional value
 

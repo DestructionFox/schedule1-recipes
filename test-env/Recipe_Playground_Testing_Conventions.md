@@ -71,7 +71,7 @@ When patching or testing simulated recipes:
 
 ## ⚠️ Rules
 
-1. ❌ Do not overwrite `uid_enhanced_recipe_registry_smart_tags.json`
+1. ❌ Do not overwrite `recipe-registry-smart-tags.json`
 2. ✅ Only output to test or sandbox folders
 3. 🧠 Always tag output JSONs clearly (e.g., `"source": "B4_simulated"`)
 4. 🧼 Avoid reusing real UIDs unless purposefully overriding for test
