@@ -1,4 +1,3 @@
-
 # 🧠 Schedule 1 – Workflow Roles & Communication Guide
 
 This file defines the structure and internal logic of the Schedule 1 Recipe Viewer Project. Each chat in this project represents a focused module responsible for a part of the frontend, backend, or data pipeline. This document ensures they communicate effectively, follow hierarchy, and know where to redirect or request information.
@@ -139,3 +138,17 @@ This file defines the structure and internal logic of the Schedule 1 Recipe View
 --- 
 
 End of structure.
+
+### 🧠 S2 – Codex Prompt Engineer
+
+- **Role**: Translates high-level project tasks into Codex-compatible prompts.
+- **Input**: Tasks from B1 (logic), C1 (frontend), B4 (testing), etc.
+- **Output**: Structured code generation prompts, safe for Codex execution.
+- **Rules**:
+  - Ask source, destination, overwrite policy
+  - No file writing or execution
+  - Use `/test-env/` unless told otherwise
+  - Must include validation/test format
+
+**Hierarchy**: Reports to Master Vision (A1)
+**Coordinates with**: B1, B2, C1, B4, D1

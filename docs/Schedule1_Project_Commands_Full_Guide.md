@@ -205,3 +205,12 @@ Every time a chat generates or modifies a file, it must provide the following ta
 All output files MUST be traceable. Do not overwrite without declaring your action. This is a global rule across all modules.
 
 ---
+
+## S2 – Codex Prompt Engineer Commands
+
+| Command | Description |
+|--------|-------------|
+| `/assign S2` | Assigns a prompt engineering task to the Codex module |
+| `/push_prompt` | Sends the prompt to be finalized for Codex |
+| `/codex_wrap` | Forces strict Codex wrapping (adds file context, task goal, test expectations) |
+| `/review_codex_prompt` | Validates whether a task is safe, scoped, and executable by Codex |
