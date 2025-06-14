@@ -1,80 +1,100 @@
-# 🧠 Codex Migration & Integration Plan – Schedule 1
+# 🧠 Schedule 1 – Codex Migration & Integration Guide (v2.0)
 
-This document outlines the plan for integrating OpenAI Codex functionality into the Schedule 1 Recipe Viewer Project. The goal is to enable smart, context-aware coding assistance for data logic, script generation, and modular AI interactions—streamlining backend JSON and UI logic evolution.
-
----
-
-## 📦 Purpose of Codex Integration
-
-- ✨ Enhance intelligent automation for JSON validation, UID generation, and smart patching
-- 🤖 Enable advanced user commands such as dynamic recipe simulations, effect matching, or stat-based fusion logic
-- 🛠️ Replace or supplement procedural scripting in JS/Node with Codex API-injected smart modules
-- 📚 Allow Codex to “explain” or auto-generate snippets during in-editor use (via VS Code or web IDE)
+This document outlines how **Codex** is used within the modern Schedule 1 architecture after migrating to a **Next.js + MongoDB + AGENT-backed** system.
 
 ---
 
-## 🧩 Target Areas for Codex Use
+## 🎯 Codex Role
 
-### ✅ Core Logic (📘 B1)
-- Dynamic name generation (`uid_enhanced_recipe_registry`)
-- Smart recipe validation
-- Auto-complete of missing fields based on schema + context
+Codex is now a **logic assistant and file transformer**, used for:
 
-### ✅ Effect Tools (📘 B2)
-- Fusion tree simulation
-- Tooltip/effect rarity annotation logic
-- Token-based dynamic explanations
+- JSON → array transforms
+- UID auditing
+- Filename verification
+- Markdown → structured schema parsing
+- Prompt synthesis for AGENT-compatible queries
+- Effect table normalization
+- Utility/test scaffolds
 
-### ✅ UI Scripting (📄 C1)
-- Recipe card rendering helpers
-- Dynamic toggle generators (batch toggle, sorters, filters)
-- Fast prototyping of interaction logic
-
-### ✅ Test Labs (📄 B4 / 🧪 D1)
-- Simulated path testing (e.g., ingredient mix testing)
-- Randomized test generation (e.g., fake effect trees)
-- Autopatch or merge test-mode recipes
+Codex does *not* simulate recipes. That role is handled by AGENTS.
 
 ---
 
-## 🧠 Implementation Flow
+## 🧩 Codex vs Agent Responsibilities
 
-1. **Create isolated Codex endpoint or chat**
-   - Use custom system prompt with rules, training lexicon, sample files
-
-2. **Sync with core logic modules**
-   - Reads current JSON, Markdown guides, and schema
-
-3. **Allow invocation from Master Vision or module chats**
-   - Master Chat (A1) delegates code tasks to Codex via prompt routing
-
----
-
-## 🔐 Safeguards & Scope
-
-- Codex is NOT used for production code overwrites without validation
-- All output must be passed through review stage in test-env or B4
-- Prompt logs are retained for auditing/debug
+| Task | Who Handles It |
+|------|----------------|
+| Fusion Simulation | `recipe.logic.agent` |
+| Recipe ROI Calculation | `sim.score.agent` |
+| JSON to Flat Object | Codex |
+| Markdown Formatter | Codex |
+| Prompt Synthesis | Codex |
+| Schema Guessing | Codex |
+| Logic Execution | AGENTS |
 
 ---
 
-## 🛠️ Dependencies
+## 🔧 Prompt Patterns
 
-- Access to OpenAI Codex (GPT-4-Turbo w/ code interpreter)
-- Optional: Integration with Node.js backend or local script runners
+Use `/codex_wrap` to turn any internal prompt into a Codex-compatible logic prompt.
 
----
-
-## 📁 File Location
-
-This document is stored in:
-
-```
-docs/Codex_Migration_Integration.md
+```md
+/codex_wrap
+Task: Convert this JSON keyed object into a flat array of recipe objects with UID injected.
+Input: {
+  "ogkush_123": { "name": "OG Kush", "effects": [...] }
+}
 ```
 
-and should be linked in `Schedule1_Chat_Module_Index.md` and `ROADMAP_AND_TODO.md`.
+You can also use:
+
+```md
+/codex_test [file]
+```
+
+To validate transformations (e.g. array conversion, schema checks, linting of recipe files).
 
 ---
 
-Let me know when you're ready to generate a system prompt or custom interface for Codex.
+## 🧠 Codex Prompt Examples
+
+```md
+/codex_wrap
+Generate a Markdown table listing all effects in effect_metadata.json, sorted by multiplier value.
+
+---
+
+/codex_wrap
+Check if any recipe in uid_enhanced_recipe_registry has missing or null values for "name" or "calculated_price".
+
+---
+
+/codex_wrap
+Convert this Markdown recipe block into a JSON-ready simulation input.
+```
+
+---
+
+## 🚫 What Codex Should NOT Do
+
+- Simulate recipes or compute price
+- Guess fusion logic
+- Alter live data directly
+- Write AGENT logic files
+
+---
+
+## ✅ Best Practices
+
+- Always isolate Codex prompts from live UI
+- Review all Codex outputs before using them in production
+- Use sandbox folder (`test-env/`) to validate Codex-written logic
+- Never replace master files with Codex output without `/log_task` and versioning
+
+---
+
+## 📁 Related Files
+
+- [`AGENTS.md`](./AGENTS.md)
+- [`Schedule1_Project_Commands_Full_Guide.md`](./Schedule1_Project_Commands_Full_Guide.md)
+- `/test-env/` → where Codex outputs should land

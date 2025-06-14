@@ -1,154 +1,107 @@
-# 🧠 Schedule 1 – Workflow Roles & Communication Guide
+# 🧠 Schedule 1 – Workflow Roles & Communication (v2.0)
 
-This file defines the structure and internal logic of the Schedule 1 Recipe Viewer Project. Each chat in this project represents a focused module responsible for a part of the frontend, backend, or data pipeline. This document ensures they communicate effectively, follow hierarchy, and know where to redirect or request information.
-
----
-
-## 🧭 MASTER LEVEL
-
-### 🧠 A1 – Master Vision & Project Brain
-**Role:** Top-level coordinator of all chats. Tracks vision, roadmap, naming, and hierarchy.
-
-- **You report to no one.**
-- **You assign roles, rename chats, set prompts, and break down ideas into modules.**
-- All chats can request clarification or direction from you.
+This document defines the updated communication protocols, responsibilities, and role boundaries across all modules and agents in the Schedule 1 project.
 
 ---
 
-## 📘 CORE LOGIC TIER
+## 🧩 Module Roles (Tiered Chat System)
 
-### 📘 B1 – Recipe Logic & Data Registry
-**Role:** Backend recipe brain. Handles UID logic, evolution rules, price logic, and JSON patching.
+| Tier | Prefix | Role |
+|------|--------|------|
+| 🧠 A  | `A1`   | Master Vision – central brain, command dispatcher |
+| 📘 B  | `B1–B3`| Core Logic – data registries, pricing, backend logic |
+| 📄 C  | `C1–C3`| Frontend/UX/UI – viewer, filters, onboarding |
+| 🔧 D  | `D1–D2`| Utility – sandbox, image management, backups |
+| 🌀 E  | `E1–E4`| Expansion – fusion sim, favorites, mobile, onboarding |
 
-- **Reports to:** 🧠 A1
-- **Feeds into:** C1 (HTML Viewer), C2 (Filtering), B2 (for effects), B3 (for metadata)
-- **Use this chat when:** You want to validate mix logic, patch recipe files, or test new mechanics.
-- **Knows:** Which JSONs are canonical (`uid_enhanced_recipe_registry.json`), how to maintain structure.
-
----
-
-### 📘 B2 – Effect Logic & Pricing Doc Chat
-**Role:** Effects knowledge base. Manages pricing multipliers, effect metadata, visual tags, and documentation.
-
-- **Reports to:** 🧠 A1
-- **Feeds into:** C1 (UI Viewer), C2 (Search), D2 (color styling)
-- **Use this chat when:** You’re refining effect visuals, updating multipliers, or defining fusion logic.
-- **Maintains:** `Schedule1_Complete_Effect_Guide.md`
+Each chat has a **clearly scoped domain**. No chat modifies another’s data without prompt from A1.
 
 ---
 
-### 🧾 B3 – Ingredient & Item Metadata Chat
-**Role:** Ingredient stats hub. Tracks cost, unlock level, and metadata for all non-weed-strain items.
+## 🤖 AGENT Roles (New Tier)
 
-- **Reports to:** 🧠 A1
-- **Feeds into:** C1 (UI Viewer), C2 (Filtering), B1 (Recipe JSON)
-- **Use this chat when:** You want to cross-reference ingredient data or add metadata to filtering.
+Agents are logic processors, not humans. They are invoked via prompts or API calls to perform deterministic backend tasks.
 
----
+| Agent Name | Purpose |
+|------------|---------|
+| `recipe.logic.agent` | Handles fusion logic, pricing simulation, effect transformation |
+| `region.match.agent` | Matches recipes to regions by demand & profit |
+| `mongo.schema.agent` | Manages schema sync, DB insertion formats |
+| `sim.score.agent` | Computes efficiency, ROI, and optimality of recipes |
 
-## 📄 UI & VIEWER TIER
-
-### 📄 C1 – Site Build: Full HTML Recipe Viewer
-**Role:** Frontend builder for index.html. Renders recipes, icons, effects, and tabs using real data.
-
-- **Reports to:** 🧠 A1
-- **Pulls from:** B1 (recipes), B2 (effects), B3 (icons/metadata)
-- **Use this chat when:** You want to render or style the full site UI or troubleshoot layout errors.
+Defined in `AGENTS.md`. These agents should never mutate production files directly – only return structured output.
 
 ---
 
-### 🔍 C2 – Filtering & Search System
-**Role:** Filtering engine for recipes. Builds dropdowns, tag-based filtering, and search logic.
+## 🔁 Communication Protocols
 
-- **Reports to:** 🧠 A1
-- **Coordinates with:** B1 (recipe tags), B2 (effect-based filters), B3 (ingredient toggles), C1 (frontend)
-- **Use this chat when:** You want to build user filters or recipe comparison features.
-
----
-
-### 🧭 C3 – UX: Landing Page & Nav Flow
-**Role:** Organizes homepage, onboarding, and menu structure (e.g., tabs, strain switches, and layout toggles)
-
-- **Reports to:** 🧠 A1
-- **Coordinates with:** C1 (content), E4 (onboarding), E2 (favorites)
-- **Use this chat when:** You want to create flow from landing to recipes or optimize onboarding.
+| Action | Description |
+|--------|-------------|
+| `/log_task [task]` | Registers a new task in the roadmap |
+| `/assign [chat]` | Delegates a task to a chat module |
+| `/push_prompt [chat]` | Sends a scoped work order to another chat |
+| `/request [subject]` | Queries a chat/agent for specific insight |
+| `/relink_master` | Reestablish Master-Vision hierarchy |
+| `/summon_agent [agent.name]` | Triggers a logic processor to compute or return data |
+| `/simulate recipe [...]` | Sends mix to fusion simulator |
+| `/codex_wrap` | Codex-specific prompt formatting for Codex-compatible modules |
 
 ---
 
-## 🔧 UTILITY TIER
+## 📦 Workflow Best Practices
 
-### 🧪 D1 – Debug & Feature Sandbox
-**Role:** Break and fix zone. Test incomplete HTML, JS, or features before production.
-
-- **Reports to:** 🧠 A1
-- **Receives inputs from:** C1 and C2
-- **Use this chat when:** You want to try something risky or debug layout/logic bugs.
-
----
-
-### 🗂️ D2 – Assets & Icons Organizer
-**Role:** Manages the /assets/images and JSON image maps.
-
-- **Reports to:** 🧠 A1
-- **Supports:** C1 (icons), B3 (icon metadata), B2 (effect tag colors)
-- **Use this chat when:** Image files are missing, renamed, or broken in layout.
+- All **source of truth** is JSON or Markdown
+- Codex builds wrappers; Agents simulate logic
+- A1 dispatches everything unless emergency override
+- Legacy folders must never be overwritten; new outputs go to root or versioned subfolders
+- All code and simulation logic must be **deterministic**
 
 ---
 
-## 🌀 EXPANSION FEATURES
+## 🧠 Master Vision (A1) Responsibilities
 
-### 🌀 E1 – Fusion Simulator
-**Role:** Experimental calculator for chaining effects and testing ingredient outcomes.
-
-- **Reports to:** B2
-- **Use this chat when:** You want to simulate recipe paths or build an effect chain engine.
-
----
-
-### ⭐ E2 – Favorites/Bookmarks Tracker
-**Role:** Tracks recent views and bookmarks via cookies/localStorage.
-
-- **Reports to:** C1 and C3
-- **Use this chat when:** You want to support favoriting recipes or saving searches.
+- Maintains file and chat hierarchy
+- Owns `/reset_scope`, `/init_project`, `/force_sync`
+- Defines module ownership
+- Resolves scope conflicts
+- Can refactor task trees, reassign modules, or elevate agent output
 
 ---
 
-### 📱 E3 – Mobile UI Handler
-**Role:** Adapts UI to work on phones. Ensures readability and reflows layout.
+## 🔐 Memory/Sync Rules
 
-- **Reports to:** C1 and C3
-- **Use this chat when:** You want to ensure responsiveness or test on mobile.
-
----
-
-### 📞 E4 – Uncle Nelson Onboarding Writer
-**Role:** Writes dynamic onboarding as Uncle Nelson. Handles tutorial steps and dialog.
-
-- **Reports to:** C3
-- **Use this chat when:** You’re writing the intro flow for first-time users.
+- All roles and agents must be synced using `/force_sync` after major updates
+- Codex and Agents should not duplicate logic—each has its own tier of control
+- All simulation logic must return both value **and** explanation
 
 ---
 
-## 📌 Notes for All Chats
-- Refer to 🧠 A1 for project coordination or naming.
-- Always update `/data/` before rendering.
-- Style through shared `/assets/styles/style.css`.
-- Store drafts or risky ideas in `/test-env/`.
+## 🧪 Feedback & Testing
 
---- 
+Use `/log_feedback` and `/push_to` for bug reports, UX suggestions, or logic issues. Testing happens in:
 
-End of structure.
+- `test-env/`
+- `D1 – Debug & Feature Sandbox`
+- With outputs saved as:
+  - `test_[feature]_results.json`
+  - `sandbox_[type].md`
 
-### 🧠 S2 – Codex Prompt Engineer
+---
 
-- **Role**: Translates high-level project tasks into Codex-compatible prompts.
-- **Input**: Tasks from B1 (logic), C1 (frontend), B4 (testing), etc.
-- **Output**: Structured code generation prompts, safe for Codex execution.
-- **Rules**:
-  - Ask source, destination, overwrite policy
-  - No file writing or execution
-  - Use `/test-env/` unless told otherwise
-  - Must include validation/test format
+## 📝 Example Workflow
 
-**Hierarchy**: Reports to Master Vision (A1)
-**Coordinates with**: B1, B2, C1, B4, D1
+```md
+/log_task Simulate ROI of 3-step OG Kush mix
+/assign B1
+/push_prompt B1 – Evaluate OGKush + Viagra + Banana
+/summon_agent recipe.logic.agent
+/simulate recipe ["Viagra", "Banana", "OG Kush"]
+```
+
+---
+
+## 🚧 Notes
+
+- Roles may evolve, but all changes must go through A1
+- No agent or module acts outside its scope without reassignment
+- All AGENTS must be documented in `AGENTS.md` and invoked explicitly

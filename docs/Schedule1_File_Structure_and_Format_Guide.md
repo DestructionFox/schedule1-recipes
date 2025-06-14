@@ -1,97 +1,125 @@
-# Schedule 1 – File Structure & Format Guide
+# 📁 Schedule 1 – File Structure & Format Guide (Next.js + Agent Migration)
 
-This document outlines the purpose and usage of each key file in the Schedule 1 Recipe Viewer project. It includes an overview of folders, major JSON data files, Markdown documentation, and UI assets.
-
----
-
-## ✅ 1. File Purpose Summary
-
-### 📁 `/index.html`, `main.js`, `style.css`
-- **Core UI structure**
-- `index.html`: Base layout
-- `main.js`: Pulls JSON data, handles UI rendering
-- `style.css`: Visual theming, dark mode, card designs
-
-### 📁 `/assets/images/`
-- Contains all `.webp` icons for:
-  - Ingredients
-  - Base weed strains
-
-### 📁 `/assets/styles/`
-- Holds `style.css` for production and `test-style.css` for sandbox use
-
-### 📁 `/data/`
-- Central JSON/Markdown repository
-- Data files used by JS, effect viewers, filters, and comparators
-
-### 📁 `/docs/`
-- Developer-facing Markdown files
-- Contains:
-  - Metadata docs
-  - UID logic
-  - Best-of recipes
-  - Human-readable versions of complex JSON data
-
-### 📁 `/test-env/`
-- Contains alternate/test HTML+JS+CSS
-- Used to validate new features without disrupting live production
+This document explains the folder structure and file conventions for the **Schedule 1 Recipe Viewer** project as it migrates to a **Next.js + MongoDB + ISR** architecture, while retaining its familiar folder layout.
 
 ---
 
-## ✅ 2. JSON and Markdown File Roles
+## 📂 Folder Structure Overview
 
-### JSON FILES
-
-#### `uid_enhanced_recipe_registry.json`
-> Core backend recipe registry. Contains:
-- Ingredient list
-- Calculated profit
-- Sell price, cost, UID, strain, effect tags
-
-#### `schedule1_all_recipes_named.json`
-> Clean readable list of known recipes, strain-categorized, with names and ingredient lists
-
-#### `effect_colors.json`
-> Maps each effect to a hex or RGB color. Used in:
-- Effect tags
-- Visual styling and rarity indicators
-
-#### `effect_fusions.json`
-> Describes which base effects can produce others
-
-#### `ingredient_and_strain_icons.json`
-> Maps names like “Banana” to file names like `Banana_Icon.webp`
-
-#### `top_regional_recipes.json`
-> Contains best picks by region (Westville, Docks, Uptown...)
-
-#### `top_regional_recipes_with_regions.json`
-> Same as above but each entry also includes its `Region` field for easier data joins
+```
+E:.
+├───assets
+│   ├───images           # Strain and ingredient icons (WebP format)
+│   └───styles           # CSS files for global and scoped style logic
+├───data
+│   ├───uid_enhanced_recipe_registry_smart_tags.json
+│   ├───effect_metadata.json
+│   ├───top_regional_recipes.json
+│   └───.Legacy          # Archived data files before format updates
+├───docs
+│   ├───Ingredients.md
+│   ├───Best_Recipes.md
+│   ├───Schedule1_Deep_Recipe_Research_Report.md
+│   └───.Legacy          # Old/retired documentation
+├───test-env
+│   ├───assets           # UI sandbox icons and CSS
+│   └───data             # Temporary test data
+│       └───Legacy
+```
 
 ---
 
-### MARKDOWN FILES
+## 🧠 Project Layers
 
-#### `Schedule1_Complete_Effect_Guide.md`
-- Explanation of all effect types
-- Rarity / fusion / regional value
-
-#### `Schedule1_All_24_Recipes_Named.md`
-- Static HTML backup of main recipes (original scraped list)
-
-#### `Ingredients.md`
-- Full table of every usable ingredient
-- Shows unlock level, source, effect
-
-#### `Best_Recipes.md`
-- Manually curated high-value or early-game recipes
-
-#### `ROADMAP_AND_TODO.md`
-- Task tracking and long-term goals
-
-#### `UID_Generation_Guide.md`
-- Explains naming system used for recipe UIDs
+| Layer | Purpose |
+|-------|---------|
+| `/data/` | Core source of truth – JSON inputs for recipes, effects, pricing, etc. |
+| `/assets/` | All static frontend assets – primarily images and stylesheets |
+| `/docs/` | Markdown documentation used by developers, writers, and onboarding |
+| `/test-env/` | Safe space for visual or logic experiments, never used in production |
 
 ---
 
-Maintain this as a reference for chat module authors and any new developer onboarding.
+## 🔧 Under-the-Hood Architecture (Next.js + MongoDB)
+
+Even with this legacy-inspired file layout, the new architecture uses:
+
+- **Next.js pages + ISR** to render recipe views statically but update them via database hooks
+- **MongoDB** stores normalized recipes, effects, and ingredient references
+- **API Routes (`/api/`)** support:
+  - `/api/recipe/[uid]` – fetch specific recipe
+  - `/api/simulate` – run agent-based fusion logic
+- **AGENTS** power logic like fusion, scoring, price prediction
+
+---
+
+## 📄 File Format Conventions
+
+### JSON
+- All JSON must be **minified** in production
+- Naming convention: `snake_case.json`
+- `uid_enhanced_recipe_registry_smart_tags.json` is primary
+- All entries must include:
+  ```json
+  {
+    "uid": "ogkush_127_fb0060",
+    "name": "...",
+    "effects": ["..."],
+    "ingredients": ["..."],
+    "calculated_price": 140,
+    ...
+  }
+  ```
+
+### Markdown
+- `.md` files live in `/docs/`
+- Must start with an H1 title
+- All long-form logic (fusion, pricing, mechanics) lives here
+
+### Images
+- WebP format only
+- Named to match ingredient or strain: `ogkush.webp`, `mouthwash.webp`
+- Icons stored in `/assets/images/`
+
+### CSS
+- Global styles: `assets/styles/style.css`
+- Strain/effect-specific styling: `strain_color_styles.css` (also in `/assets/styles/`)
+
+---
+
+## 🧠 Agent + API Sync Strategy
+
+Agents live in backend logic but reference `/data/` for base truth and `/docs/` for annotations.
+
+- Simulation agents pull from:
+  - JSON files (recipes)
+  - Agent logic maps (via `AGENTS.md`)
+- Output can be:
+  - Rendered in Next.js frontend
+  - Sent back to `/api/simulate`
+  - Exported as `.md` or `.json` for docs or testing
+
+---
+
+## ✅ Naming Standards Summary
+
+| File Type | Convention | Example |
+|-----------|------------|---------|
+| JSON | `snake_case.json` | `effect_metadata.json` |
+| Markdown | `PascalCase.md` | `Schedule1_Deep_Recipe_Research_Report.md` |
+| Images | `lowercase.webp` | `banana.webp` |
+| CSS | `hyphenated.css` | `strain_color_styles.css` |
+
+---
+
+## 🚧 In Development
+
+New folders (internal use, not shown yet):
+
+- `/agents/` – logic modules like `recipe.logic.agent.js`
+- `/schemas/` – MongoDB schema files
+- `/sim/` – test harnesses and pattern evaluations
+- `/api/` – live routes for data queries and simulation
+
+These will be added to the repo root but won’t disrupt the top-level folder style.
+
