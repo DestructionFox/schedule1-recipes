@@ -25,6 +25,3 @@ Our modular logic is now supported by agents:
 ### Credits
 Made by [DestructionFox](https://github.com/DestructionFox)  
 Built with love, weed, and just a bit of Horse Semen.
-
-
-🗃️ The old `Best_Recipes.md` file has been archived to `/docs/.Legacy/`. All “top recipes” are now rendered dynamically from JSON sources.
